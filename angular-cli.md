@@ -1,14 +1,14 @@
 # Angular CLI
 
-일반적으로 Framework를 도입할 때 가장 힘든 점 중 하나가 개발환경 구축입니다. 프로젝트 디렉토리 구조를 고려해서 구성해야 하고, 기본적으로 사용되는 설정 파일들도 다수 존재합니다. 구성을 파악하는 것부터가 쉽지 않습니다. 코드를 작성한 후 빌드, 번들링, 테스팅, 배포 등등 해야 할 일이 너무나 많고 설정 방법 또한 복잡해 프레임워크 사용을 기피하기도 합니다.
+일반적으로 Framework를 도입할 때 가장 힘든 점 중 하나가 개발환경 구축입니다. 프로젝트 디렉토리 구조를 고려해서 구성해야 하고, 기본적으로 사용 되는 설정 파일들도 다수 존재합니다. 구성을 파악하는 것부터가 쉽지 않습니다. 코드를 작성한 후 빌드, 번들링, 테스팅, 배포 등등 해야 할 일이 너무나 많고 설정 방법 또한 복잡해 프레임 워크 사용을 기피 하기도 합니다.
 
-이러한 고민을 해결하기 위한 방편으로 대다수 모던 프레임워크는 CLI 도구를 제공합니다. Angular 또한 마찬가지입니다. \[Angular CLI\]\[5\]는 [Angular](https://angular.io) 애플리케이션을 초기화, 개발, 스캐폴딩 및 유지 관리를 도와주는 매우 편리한 도구입니다.
+이러한 고민을 해결하기 위한 방편으로 대다수 모던 프레임 워크는 CLI 도구를 제공합니다. Angular 또한 마찬가지입니다. [Angular CLI](https://cli.angular.io/​)는 Angular 애플리케이션을 초기화, 개발, 스캐폴딩 및 유지 관리를 도와주는 매우 편리한 도구입니다.
 
-\[![Angular CLI](.gitbook/assets/cli-logo.svg)\]\[5\]
+![Angular CLI](.gitbook/assets/cli-logo.svg)
 
-Angular CLI를 사용하지 않을 때\(왼쪽\)와 사용할 때\(오른쪽\), 프로젝트 시작을 위해 요구되는 프로세스를 인포그래픽으로 살펴보면 쉽게 이해할 수 있을 겁니다. 중요한 건 복잡한 절차가 단순해진다는 것입니다.
+Angular CLI를 사용하지 않을 때\(왼쪽\)와 사용할 때\(오른쪽\), 프로젝트 시작을 위해 요구되는 프로세스를 인포 그래픽으로 살펴보면 쉽게 이해할 수 있을 겁니다. 중요한 건 복잡한 절차가 단순 해진다는 것입니다.
 
-![Angular CLI](.gitbook/assets/using-angular-cli.png)
+![Angular CLI: &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xC744; &#xB54C; vs &#xC0AC;&#xC6A9;&#xD560; &#xB54C;](.gitbook/assets/using-angular-cli.png)
 
 ## angular 설치
 
@@ -26,6 +26,8 @@ $ npm i -g @angular/cli
 $ ng -v
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="설치 결과 화면" %}
 ```bash
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
@@ -51,6 +53,8 @@ Package                      Version
 rxjs                         6.1.0
 typescript                   2.7.2
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## angular 도움말
 
@@ -60,6 +64,8 @@ typescript                   2.7.2
 $ ng -h
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="사용 가능항 명령 출력 화면" %}
 ```text
 사용 가능한 명령:
   add         라이브러리를 프로젝트에 추가
@@ -81,6 +87,8 @@ $ ng -h
 
 각 명령 사용에 대한 자세한 도움말은 "ng [command name] --help" 코드를 통해 살펴보세요.
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## angular 프로젝트 생성
 
@@ -96,6 +104,8 @@ $ ng new ng6project --skip-install
 
 생성된 프로젝트 스캐폴딩 구조는 다음과 같습니다. 이와 같은 구조와 코딩 컨벤션이 **Angular 프레임워크 프로젝트의 표준 구조**입니다.
 
+{% code-tabs %}
+{% code-tabs-item title="프로젝트 파일 구조" %}
 ```bash
 .
 ├── README.md
@@ -129,6 +139,8 @@ $ ng new ng6project --skip-install
 ├── tsconfig.json
 └── tslint.json
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## angular 프로젝트 버전
 
@@ -142,7 +154,9 @@ $ cd ng6project
 $ ng -v
 ```
 
-```text
+{% code-tabs %}
+{% code-tabs-item title="프로젝트 버전 출력 화면" %}
+```bash
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
@@ -174,6 +188,8 @@ rxjs                              6.2.0
 typescript                        2.7.2
 webpack                           4.8.3
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## angular 프로젝트 실행
 
@@ -188,6 +204,8 @@ $ ng serve
 $ ng server --open
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="라이브 개발 서버 구동 화면" %}
 ```bash
 ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
@@ -201,6 +219,8 @@ chunk {styles} styles.js, styles.js.map (styles) 15.6 kB [initial] [rendered]
 chunk {vendor} vendor.js, vendor.js.map (vendor) 3.39 MB [initial] [rendered]
 ℹ ｢wdm｣: Compiled successfully.
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## angular 프로젝트 번들링
 
@@ -216,5 +236,5 @@ $ ng build --prod
 
 추가적으로 Angular CLI에 대한 자세한 사용법은 [Angular CLI](https://github.com/angular/angular-cli/wiki) Wiki를 참고해보세요.
 
-\[5\]: [https://cli.angular.io/](https://cli.angular.io/)
+
 
