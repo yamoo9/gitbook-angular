@@ -15,7 +15,8 @@ $ npm i @angular/material @angular/cdk
 이어서 애니메이션\(`animations`\) 모듈을 설치 합니다. Angular Material 컴포넌트 중 애니메이션에 의존하기 때문에 애니메이션 모듈 설치가 필요합니다.
 
 > **NOTE.**  
->  `@angular/animations` 모듈은 [WebAnimation API](https://drafts.csswg.org/web-animations/)를 사용하고 있어, 애니메이션 API를 지원하지 않는 브라우저에서는 정상 작동하지 않습니다. \[브라우저 호환성\]\(\([https://caniuse.com/\#feat=web-animation](https://caniuse.com/#feat=web-animation)\) 체크 후, 프로젝트 반영 여부를 결정할 필요가 있습니다. \([web-animation-js](https://github.com/web-animations/web-animations-js) polyfill을 사용하는 방법도 있으니 참고하세요\)
+>  `@angular/animations` 모듈은 [WebAnimation API](https://drafts.csswg.org/web-animations/)를 사용하고 있어, 애니메이션 API를 지원하지 않는 브라우저에서는 정상 작동하지 않습니다. [브라우저 호환성](https://caniuse.com/#feat=web-animation) 체크 후, 프로젝트 반영 여부를 결정할 필요가 있습니다.   
+> \([web-animation-js](https://github.com/web-animations/web-animations-js) polyfill을 사용하는 방법도 있으니 참고하세요\)
 
 ```bash
 $ npm i @angular/animations
@@ -112,7 +113,7 @@ import 'hammerjs';
 
 ## Material 아이콘 설정 \(옵션\)
 
-공식 \[Material 디자인 아이콘\]\[1\]을 프로젝트에 사용하고자 한다면 아이콘 폰트를 로드합니다.
+공식 [Material 디자인 아이콘](https://material.io/tools/icons/)을 프로젝트에 사용하고자 한다면 아이콘 폰트를 로드합니다.
 
 ```markup
 <!-- src/index.html -->
@@ -120,13 +121,11 @@ import 'hammerjs';
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
-사용 방법은 다음과 같습니다. 콘텐츠로 추가되는 텍스트에 따라 아이콘이 변경됩니다. 설정 가능한 아이콘 식별 텍스트는 \[Material 디자인 아이콘\]\[1\]를 확인할 수 있습니다.
+사용 방법은 다음과 같습니다. 콘텐츠로 추가되는 텍스트에 따라 아이콘이 변경됩니다. 설정 가능한 아이콘 식별 텍스트는 [Material 디자인 아이콘](https://material.io/tools/icons/)를 확인할 수 있습니다.
 
 ```markup
 <i class="material-icons" aria-hidden="true">home</i>
 ```
 
 보다 자세한 사용 방법은 [Material 아이콘 가이드](https://google.github.io/material-design-icons/)를 참고하세요.
-
-\[1\]: [https://material.io/tools/icons/](https://material.io/tools/icons/)
 
