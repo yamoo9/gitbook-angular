@@ -28,9 +28,9 @@
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## 모듈\(Modules\)
+## 루트 모듈\(Root Module\)
 
-루트 디렉토리에 위치한 `/main.ts` 파일은 Angular 애플리케이션의 기본 엔트리 포인트입니다. JIT 컴파일러로 애플리케이션을 컴파일 한 후, 루트 모듈인\(`AppModule`\)을 부트스트랩하여 웹 브라우저에서 실행합니다. 코드를 살펴보면 `AppModule` 파일을 불러와 부트스트랩 모듈에 설정합니다.
+루트 디렉토리에 위치한 `/main.ts` 파일은 Angular 애플리케이션의 기본 엔트리 포인트입니다. JIT 컴파일러로 애플리케이션을 컴파일 한 후, 루트 모듈인\(`AppModule`\)을 부트스트랩 하여 웹 브라우저에서 실행합니다. 코드를 살펴보면 `AppModule` 파일을 불러와 부트스트랩 모듈에 설정합니다.
 
 {% code-tabs %}
 {% code-tabs-item title="main.ts" %}
@@ -38,7 +38,8 @@
 import { enableProdMode }         from "@angular/core";
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule }              from './app/app.module'; // ⬅⬅⬅ 루트 모듈
+// 루트 모듈 파일 `app/app.module.ts` 로드
+import { AppModule }              from './app/app.module';
 import { environment }            from './environments/environment';
 
 if (environment.production) { enableProdMode() }
@@ -50,11 +51,18 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-이해가 잘 안되면 그림을 살펴보세요.
+이해를 돕기 위한 그림을 살펴봅니다.
 
 > `src/main.ts` ⬅︎ `src/app/app.module.ts`
 
 ![](../.gitbook/assets/app-module.png)
+
+{% hint style="info" %}
+**NOTE.**  
+Angular CLI를 통해 스캐폴딩 된 프로젝트 구조는 이미 루트 모듈\(`AppModule`\)을 가지고 있습니다.  추가적으로 다른 모듈을 만들어 개발할 수도 있습니다.
+
+모듈은 관련된 컴포넌트 들을 묶은 그룹을 말하며, 모듈이 모여 Angular 애플리케이션을 구성하게 됩니다. 간단한 애플리케이션이라면 루트 모듈만으로도 충분하지만, 복잡도가 높아질 수도록 모듈을 분류해서 관리하는 것이 좋습니다. \(기능 / 공유 모듈 등\)
+{% endhint %}
 
 ## 부트스트래핑\(Bootstrapping\)
 
@@ -98,7 +106,7 @@ export class AppModule { }
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-이해가 잘 안되면 그림을 살펴보세요.
+이해를 돕기 위한 그림을 살펴봅니다.
 
 > `src/app/app.module.ts` ⬅︎ `src/app/app.component.ts`
 
