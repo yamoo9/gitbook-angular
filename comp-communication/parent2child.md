@@ -35,7 +35,7 @@ export class ParentComponent {
 
 ### 자식 컴포넌트 코드
 
-자식 컴포넌트는 부모로 부터 전달 받은 데이터 `element`를 컴포넌트 클래스 속성으로 설정해야 합니다. 이 때 자식 컴포넌트는 `Input` 모듈을 불러와 `@Input()` 데코레이터를 사용해 `element` 속성을 설정해야 부모 컴포넌트의 데이터를 받아 올 수 있습니다.
+자식 컴포넌트는 부모로 부터 전달 받은 데이터 `element`를 컴포넌트 클래스 속성으로 설정해야 합니다. 이 때 자식 컴포넌트는 [`Input`](https://angular.io/api/core/Input) 모듈을 불러와 `@Input()` 데코레이터를 사용해 `element` 속성을 설정해야 부모 컴포넌트의 데이터를 받아 올 수 있습니다.
 
 ```typescript
 // app/child/child.component.ts

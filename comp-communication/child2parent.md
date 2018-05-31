@@ -4,7 +4,7 @@
 
 ### 자식 컴포넌트 코드
 
-자식 컴포넌트 사용자로부터 입력 받은 데이터를 부모 컴포넌트에 전달하기 위해서는 다소 복잡한 과정을 거쳐야 합니다. 먼저 `EventEmitter`, `Output` 모듈을 `@angular/core`로부터 불러와야 합니다.
+자식 컴포넌트 사용자로부터 입력 받은 데이터를 부모 컴포넌트에 전달하기 위해서는 다소 복잡한 과정을 거쳐야 합니다. 먼저 [`EventEmitter`](https://angular.io/api/core/EventEmitter), [`Output`](https://angular.io/api/core/Output) 모듈을 `@angular/core`로부터 불러와야 합니다.
 
 `EventEmitter`는 커스텀 이벤트 감지에 따른 이벤트 객체\(데이터\) 방출을 담당합니다. `Output`은 `@Output()` 데코레이터를 통해 이벤트 객체를 방출할 때 사용합니다.
 

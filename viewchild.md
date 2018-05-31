@@ -1,6 +1,6 @@
 # ViewChild 데코레이터
 
-ViewChild 데코레이터를 사용하면 자식 컴포넌트 또는 DOM에 접근할 수 있습니다. ViewChild는 컴포넌트, 디렉티브 또는 템플릿 참조 선택자와 일치하는 첫번째 요소를 반환합니다. ViewChild의 장점은 동적으로 참조가 새로운 요소로 변경되면 자동으로 업데이트 되어 관리된다는 점입니다.
+[ViewChild](https://angular.io/api/core/ViewChild) 데코레이터를 사용하면 자식 컴포넌트 또는 DOM에 접근할 수 있습니다. ViewChild는 컴포넌트, 디렉티브 또는 템플릿 참조 선택자와 일치하는 첫번째 요소를 반환합니다. ViewChild의 장점은 동적으로 참조가 새로운 요소로 변경되면 자동으로 업데이트 되어 관리된다는 점입니다.
 
 > **NOTE.**  
 >  자식들\(Children\)에 접근하려면 ViewChildren을 사용합니다.
