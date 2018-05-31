@@ -1,6 +1,6 @@
 # Angular 아키텍쳐
 
-![](../.gitbook/assets/angular-architecture-overview.png)
+![Angular Architecture](../.gitbook/assets/angular-architecture-overview.png)
 
 Angular를 구성하는 아키텍처\(Architecture\)를 살펴보겠습니다.
 

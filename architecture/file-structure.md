@@ -4,6 +4,8 @@
 
 Angular CLI 도구를 통해 생성된 프로젝트 구조에서 먼저 살펴 볼 부분은 정리해봅니다.
 
+{% code-tabs %}
+{% code-tabs-item title="Angular 프로젝트 구조" %}
 ```bash
 .
 ├── README.md
@@ -37,6 +39,8 @@ Angular CLI 도구를 통해 생성된 프로젝트 구조에서 먼저 살펴 �
 ├── tsconfig.json
 └── tslint.json
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Angular 프로젝트 소스\(`src`\) 디렉토리
 
@@ -71,4 +75,8 @@ Angular CLI 도구를 통해 생성된 프로젝트 구조에서 먼저 살펴 �
 | `README.md` | Angular CLI 명령어 목록을 포함한 프로젝트 기본 문서 |
 | `tsconfig.json` | 사용자 에디터에서 픽업하여 유용한 툴링을 제공하는 TypeScript 컴파일러 구성 파일 |
 | `tslint.json` | 코드 스타일을 일관성있게 유지하기 위한 구성 파일 |
+
+
+
+보다 자세한 내용은 [Angular - QuickStart](https://angular.io/guide/quickstart)를 참고하세요.
 
