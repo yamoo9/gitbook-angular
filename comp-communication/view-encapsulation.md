@@ -1,6 +1,6 @@
-# 뷰 인캡슐레이션
+# 컴포넌트 스타일 캡슐화
 
-[ViewEncapsulation](https://angular.io/api/core/ViewEncapsulation)은 컴포넌트 스타일을 컴포넌트 독립적으로 사용할지 유무를 결정할 때 사용합니다. 즉, 컴포넌트 스타일시트 파일에 작성한 코드를 컴포넌트에 한해 동작하도록 할지 설정하는 것이죠. 이를 스타일 캡슐화라고 부릅니다.
+[ViewEncapsulation](https://angular.io/api/core/ViewEncapsulation)은 컴포넌트 스타일을 컴포넌트 독립적으로 사용할지 유무를 결정할 때 사용합니다. 즉, 컴포넌트 스타일시트 파일에 작성한 코드를 컴포넌트에 한해 동작하도록 할지 설정하는 것이죠.
 
 `ViewEncapsulation`은 `enum` 타입 입니다. `enum` 타입은 TypeScript에서 지원하는 데이터 유형으로 숫자를 기억하기 용이하도록 할 때 사용됩니다. \(JavaScript에서는 지원하지 않습니다\)
 
