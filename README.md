@@ -1,8 +1,8 @@
-# Introduction
+# Angular 프레임워크
 
 ## 소개
 
-![Angular Front-End Framework](.gitbook/assets/angular%20%281%29.svg)
+![Anglar Framework](.gitbook/assets/angular%20%281%29.svg)
 
 [Angular](https://angular.io)는 JavaScript 기반의 오픈 소스 Front-End 웹 애플리케이션 프레임워크입니다. 초기 버전인 AngularJS는 2010년 발표되었고, Angular 1으로 부릅니다. 2016년 9월 Angular 2가 정식으로 발표되면서 AngularJS가 아닌, Angular로 이름을 통칭하기로 결정합니다. 현재\(2018년 6월\) Angular 6가 나온 상태입니다.
 
