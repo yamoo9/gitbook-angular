@@ -30,8 +30,10 @@
   * [부모 컴포넌트 ➡ 자식 컴포넌트](comp-communication/parent2child.md)
   * [자식 컴포넌트 ➡ 부모 컴포넌트](comp-communication/child2parent.md)
 * [뷰 인캡슐레이션](view-encapsulation.md)
-* [템플릿 레퍼런스 \#변수](template-ref-var.md)
+* [템플릿 내 요소 참조 변수](template-ref-var.md)
 * [ViewChild 데코레이터](viewchild.md)
 * [컴포넌트 콘텐츠 삽입](ng-content.md)
 * 컴포넌트 라이프사이클
+* [Angular 6.x 변경 사항](change-angular-6.md)
+* [커닝페이퍼\(Cheat Sheet\)](cheat-sheet.md)
 

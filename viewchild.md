@@ -64,16 +64,19 @@ import {
   ViewChild,
   AfterViewInit } from "@angular/core";
 
+// ChildComponent 컴포넌트 로드
 import { ChildComponent } from './child/child.component';
 
 @Component({ ... })
 export class AppComponent implements AfterViewInit {
 
+  // ChildComponent 컴포넌트 참조
   @ViewChild(ChildComponent) child: ChildComponent;
 
   ngAfterViewInit() {
     console.log(this.child.whoAmI()); // "👶 자식 컴포넌트입니다."
   }
+  
 }
 ```
 {% endcode-tabs-item %}
