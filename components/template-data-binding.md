@@ -74,7 +74,8 @@ button.is-big {
 
 {% hint style="info" %}
 **NOTE**.  
-`button` 선택자를 사용했지만, 컴포넌트 내부에 연결된 CSS 코드는 컴포넌트 독립적으로 적용됩니다. 자세한 내용은 [뷰 인캡슐레이션](https://uid.gitbook.io/angular/~/edit/primary/components/template-data-binding)에서 확인해보세요. 
+`button` 선택자를 사용했지만, 컴포넌트 내부에 연결된 CSS 코드는 컴포넌트 독립적으로 적용됩니다.   
+자세한 내용은 [뷰 인캡슐레이션](https://uid.gitbook.io/angular/~/edit/primary/components/template-data-binding)에서 확인해보세요. 
 
 컴포넌트 독립적으로 적용된 선택자: `button[_ngcontent-c1]`
 {% endhint %}
