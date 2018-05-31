@@ -78,5 +78,7 @@ Angular CLI 도구를 통해 생성된 프로젝트 구조에서 먼저 살펴 �
 
 
 
-보다 자세한 내용은 [Angular - QuickStart](https://angular.io/guide/quickstart)를 참고하세요.
+{% hint style="info" %}
+자세한 내용은 [Angular - QuickStart](https://angular.io/guide/quickstart)를 참고하세요.
+{% endhint %}
 

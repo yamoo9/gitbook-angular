@@ -234,7 +234,9 @@ $ ng serve --prod
 $ ng build --prod
 ```
 
+{% hint style="info" %}
 추가적으로 Angular CLI에 대한 자세한 사용법은 [Angular CLI](https://github.com/angular/angular-cli/wiki) Wiki를 참고해보세요.
+{% endhint %}
 
 
 

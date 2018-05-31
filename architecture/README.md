@@ -16,3 +16,7 @@ Angular를 구성하는 아키텍처\(Architecture\)를 살펴보겠습니다.
 * 라우팅
 * ...
 
+{% hint style="info" %}
+아키텍처에 대한 자세한 내용은 [Angular - Architecture](https://angular.io/guide/architecture)에서 살펴볼 수 있습니다.
+{% endhint %}
+
