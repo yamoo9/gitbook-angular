@@ -35,5 +35,5 @@
 * [컴포넌트 콘텐츠 삽입](ng-content.md)
 * 컴포넌트 라이프사이클
 * [Angular 6.x 변경 사항](change-angular-6.md)
-* [커닝페이퍼\(Cheat Sheet\)](cheat-sheet.md)
+* [커닝페이퍼](cheat-sheet.md)
 
