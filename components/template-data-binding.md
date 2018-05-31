@@ -6,21 +6,21 @@
 
 템플릿으로 사용할 HTML 구조를 마크업 합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/button/button.component.html" %}
 ```markup
-<!-- app/button/button.component.html -->
-
 <button type="button">버튼 컴포넌트</button>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 컴포넌트 등록
 
 생성한 버튼 컴포넌트를 애플리케이션에서 사용하려면 `app/app.module.ts` 파일에 불러와 `@NgModule` 선언\(`declarations`\)에 추가해야 합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/app.module.ts" %}
 ```typescript
-// app/app.module.ts
-
-...
-
 import { ButtonComponent } from "./button/button.component";
 
 @NgModule({
@@ -32,22 +32,26 @@ import { ButtonComponent } from "./button/button.component";
 })
 export class AppModule { }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 컴포넌트 사용
 
+{% code-tabs %}
+{% code-tabs-item title="app/app.component.html" %}
 ```markup
-<!-- app/app.component.html -->
-
 <app-button></app-button>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 컴포넌트 스타일 설정
 
 컴포넌트를 스타일링하고자 한다면 `app/button` 디렉토리에 `button.component.css` 파일을 생성한 후, 버튼 컴포넌트 스타일 코드를 작성합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/button/button.component.css" %}
 ```css
-/* app/button/button.component.css */
-
 button {
   cursor: pointer;
   border: none;
@@ -65,8 +69,17 @@ button.is-big {
   font-size: 18px;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-> **NOTE.**  
->  `button` 선택자를 사용했지만, 컴포넌트 내부에 연결된 CSS 코드는 컴포넌트 독립적으로 적용됩니다.  
->  컴포넌트 독립적으로 적용된 선택자: `button[_ngcontent-c1]`
+{% hint style="info" %}
+**NOTE**.  
+`button` 선택자를 사용했지만, 컴포넌트 내부에 연결된 CSS 코드는 컴포넌트 독립적으로 적용됩니다. 자세한 내용은 [뷰 인캡슐레이션](https://uid.gitbook.io/angular/~/edit/primary/components/template-data-binding)에서 확인해보세요. 
+
+컴포넌트 독립적으로 적용된 선택자: `button[_ngcontent-c1]`
+{% endhint %}
+
+
+
+
 

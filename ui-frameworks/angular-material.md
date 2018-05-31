@@ -68,9 +68,13 @@ import {MatCheckboxModule} from '@angular/material';
 
 Checkbox 컴포넌트를 등록했으니 이어서 컴포넌트 템플릿 파일에서 사용하는 예를 살펴보겠습니다. 사용 방법은 간단합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="HTML" %}
 ```markup
 <mat-checkbox>Angular Material 사용에 동의합니다.</mat-checkbox>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 테마 설정
 
