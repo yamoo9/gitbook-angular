@@ -8,20 +8,19 @@
 
 `EventEmitter`는 커스텀 이벤트 감지에 따른 이벤트 객체\(데이터\) 방출을 담당합니다. `Output`은 `@Output()` 데코레이터를 통해 이벤트 객체를 방출할 때 사용합니다.
 
-사용법은 아래 코드 예시를 살펴봐주세요.
-
+{% code-tabs %}
+{% code-tabs-item title="app/cockpit/cockpit.component.ts" %}
 ```typescript
-// app/cockpit/cockpit.component.ts
-
 // EventEmitter, Output 모듈 로드
 import { Component, OnInput, EventEmitter, Output } from "@angular/core";
 
-@Component(metadata)
+@Component({ ... })
 export class CockpitComponent {
 
   // @output() 데코레이트를 사용해 자식 컴포넌트에서 부모 컴포넌트로 데이터 출력
   // 제너릭(Generics) 문법을 사용해 이벤트 데이터로 방출할 타입 지정
-  @output() addFooded = new EventEmitter<{type:string, name:string, content:string}>();
+  @output() 
+  addFooded = new EventEmitter<{type:string, name:string, content:string}>();
 
   public food_type:    string = '';
   public food_name:    string = '';
@@ -41,14 +40,16 @@ export class CockpitComponent {
   onInput() {}
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 자식 컴포넌트의 템플릿에는 사용자에게 입력 받을 수 있는 인풋 요소가 3개 준비되어 있고, 모두 양방향 데이터 바인딩으로 연결되어 있습니다. '식사 추가' 버튼 컴포넌트는 `(click)` 이벤트가 발생했을 때 `onAddFood()` 메서드를 실행 시킵니다.
 
 `onAddFood()` 메서드가 실행되면 사용자로부터 입력된 데이터를 수집한 객체를 `addFooded` 커스텀 이벤트 `.emit()` 메서드를 통해 방출합니다. 이 데이터는 부모 컴포넌트에 전달됩니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/cockpit/cockpit.component.html" %}
 ```markup
-<!-- app/cockpit/cockpit.component.html -->
-
 <div class="row">
   <div class="col-xs-12">
     <p>식사 추가</p>
@@ -86,25 +87,29 @@ export class CockpitComponent {
   </div>
 </div> <!-- // .row -->
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### 부모 컴포넌트 코드
 
 부모 컴포넌트 템플릿에 사용된 자식 컴포넌트 `<app-child>`에는 `(addFooded)` 커스텀 이벤트 속성이 연결되어 있습니다. 자식 컴포넌트로부터 커스텀 이벤트 방출이 감지되면, 부모 컴포넌트의 `onFoodAdded($event)` 메서드를 실행시킵니다. 메서드에 전달되는 `$event` 인자 값은 자식 컴포넌트에서 전달한 커스텀 이벤트 객체\(데이터\)입니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/parent/parent.component.html" %}
 ```markup
-<!-- app/parent/parent.component.html -->
-
 <app-child (addFooded)="onFoodAdded($event)"></app-child>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 부모 컴포넌트에 정의된 `onFoodAdded()` 메서드는 자식 컴포넌트로부터 전달 받은 이벤트 객체\(데이터\)를 `foodData` 매개변수로 받아, 자신의 `foods` 데이터를 업데이트 합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/parent/parent.component.ts" %}
 ```typescript
-// app/parent/parent.component.ts
-
 import { Component } from "@angular/core";
 
-@Component(metadata)
+@Component({ ... })
 export class ParentComponent {
 
   public foods:object[] = [
@@ -122,6 +127,8 @@ export class ParentComponent {
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 커스텀 이벤트 속성 별칭\(Alias\)
 
@@ -129,28 +136,34 @@ export class ParentComponent {
 
 자식 컴포넌트 코드:
 
+{% code-tabs %}
+{% code-tabs-item title="app/cockpit/cockpit.component.ts" %}
 ```typescript
-...
-// app/cockpit/cockpit.component.ts
-
-@Component(metadata)
+@Component({ ... })
 export class CockpitComponent {
 
   // 커스텀 이벤트 속성 별칭 설정
-  @output('af') addFooded = new EventEmitter<{type:string, name:string, content:string}>();
+  @output('af') 
+  addFooded = new EventEmitter<{type:string, name:string, content:string}>();
 
   ...
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 설정된 커스텀 이벤트 별칭 속성을 부모 컴포넌트 템플릿에서 사용할 수 있습니다.
 
 부모 컴포넌트 템플릿 코드:
 
+{% code-tabs %}
+{% code-tabs-item title="app/parent/parent.component.html" %}
 ```markup
-<!-- app/parent/parent.component.html -->
-
 <!-- 커스텀 이벤트 별칭 사용 -->
 <app-child (af)="onFoodAdded($event)"></app-child>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
 

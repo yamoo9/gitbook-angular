@@ -4,6 +4,8 @@
 
 예를 들어 사용자가 입력하는 값을 템플릿 내에서 받아 사용하려면 인풋 요소에 템플릿 레퍼런스 변수를 설정한 후, 버튼 요소에서 이를 컴포넌트 메서드의 인자로 전달할 수 있습니다.
 
+{% code-tabs %}
+{% code-tabs-item title="Template HTML" %}
 ```markup
 <div class="form-group">
   <label for="food-name">식사</label>
@@ -12,7 +14,7 @@
     id="food-name"
     class="form-control"
     placeholder="식사 이름 입력"
-    #foodName>
+    #foodName> <!-- #템플릿 레퍼런스 식별자 -->
 </div>
 
 ...
@@ -22,4 +24,6 @@
   class="btn btn-danger"
   (click)="onAddFood(foodName.value)">식사 추가</button>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 

@@ -4,6 +4,8 @@
 
 `ViewEncapsulation`은 `enum` 타입 입니다. `enum` 타입은 TypeScript에서 지원하는 데이터 유형으로 숫자를 기억하기 용이하도록 할 때 사용됩니다. \(JavaScript에서는 지원하지 않습니다\)
 
+{% code-tabs %}
+{% code-tabs-item title="TypeScript" %}
 ```typescript
 enum ViewEncapsulation {
   Emulated: 0,
@@ -11,6 +13,8 @@ enum ViewEncapsulation {
   None: 2
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 | 속성 | 값 | 설명 |
 | --- | --- | --- |
@@ -20,6 +24,8 @@ enum ViewEncapsulation {
 
 컴포넌트 스타일 캡슐화를 사용하지 않으려면 `@Component()` 컴포넌트 데코레이터에 `encapsulation` 속성 값으로 `ViewEncapsulation.None`을 설정합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="view-encapsulation.component.ts" %}
 ```typescript
 import { Component } from "@angular/core";
 
@@ -33,6 +39,6 @@ export class ViewEncapsulationComponent {
 
 }
 ```
-
-
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
