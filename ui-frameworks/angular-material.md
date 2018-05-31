@@ -105,7 +105,9 @@ Checkbox 컴포넌트를 등록했으니 이어서 컴포넌트 템플릿 파일
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Angular 팀에서 만든 테마가 아니라 직접 테마를 제작하려면 [테마 가이드](https://material.angular.io/guide/theming)를 참고해 작성하면 됩니다.
+{% hint style="info" %}
+Angular 팀에서 만든 테마가 아니라 직접 테마를 제작하려면 [테마 가이드](https://material.angular.io/guide/theming)를 참고해 작성합니다.
+{% endhint %}
 
 ## 제스처 라이브러리 설정
 
@@ -151,7 +153,9 @@ import 'hammerjs';
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
-
+{% hint style="info" %}
 보다 자세한 사용 방법은 [Material 아이콘 가이드](https://google.github.io/material-design-icons/)를 참고하세요.
+{% endhint %}
+
+
 

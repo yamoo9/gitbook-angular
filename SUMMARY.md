@@ -15,7 +15,7 @@
   * [인라인 템플릿 / 스타일링](components/inline-template-style.md)
   * [셀렉터](components/metadata-selector.md)
   * [데이터 바인딩](components/data-binding/README.md)
-    * [스트링 인터폴레이션](components/data-binding/string-interpolation.md)
+    * [문자 인터폴레이션](components/data-binding/string-interpolation.md)
     * [속성 바인딩](components/data-binding/prop-binding.md)
     * [이벤트 바인딩](components/data-binding/event-binding.md)
     * [양방향 데이터 바인딩](components/data-binding/2-way-binding.md)

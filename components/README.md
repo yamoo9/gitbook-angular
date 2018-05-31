@@ -44,7 +44,9 @@ GitBook 애플리케이션 인터페이스 뷰를 살펴보면 좌측에 사이�
 
 ![Component Tree](../.gitbook/assets/component-tree.png)
 
-
-
+{% hint style="info" %}
 보다 자세한 내용은 [Angular - Introduction to Components](https://angular.io/guide/architecture-components)를 참고하세요.
+{% endhint %}
+
+
 

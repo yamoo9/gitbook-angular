@@ -49,7 +49,5 @@ $ ng serve --open
 Bootstrap을 사용하는 방법은 [Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)을 참고하시길 바랍니다.
 {% endhint %}
 
-{% page-ref page="bootstrap.md" %}
-
 
 

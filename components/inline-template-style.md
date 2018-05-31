@@ -2,6 +2,8 @@
 
 간단한 컴포넌트의 경우, 별도의 HTML, CSS 파일을 만드는 것에 회의적일 수 있습니다. 이런 경우, 컴포넌트 파일\(`<컴포넌트-이름>.component.ts`\) 내부에 인라인 템플릿, 스타일링 코드를 삽입하여 처리할 수 있습니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app/checkbox/checkbox.component.ts" %}
 ```typescript
 import { Component, OnInit } from '@angular/core';
 
@@ -30,4 +32,14 @@ export class CheckboxComponent implements OnInit {
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% hint style="info" %}
+**NOTE.**  
+프로젝트 팀원 중 컴포넌트가 아닌, HTML, CSS를 별도로 수정해야 할 경우는   
+별도의 템플릿, 스타일 파일을 유지하는 것이 보다 권장됩니다.
+{% endhint %}
+
+
 
