@@ -2,8 +2,8 @@
 
 프로젝트 루트 디렉토리에 위치한 HTML 파일은 애플리케이션의 인덱스 페이지에 해당됩니다. 필요한 경우 애플리케이션 개발에 필요한 리소스 등을 추가적으로 설정하거나 변경할 수 있습니다.
 
-`/index.html` 파일:
-
+{% code-tabs %}
+{% code-tabs-item title="index.html" %}
 ```markup
 <!doctype html>
 <html lang="ko-KR">
@@ -25,13 +25,15 @@
 </body>
 </html>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 모듈\(Modules\)
 
 루트 디렉토리에 위치한 `/main.ts` 파일은 Angular 애플리케이션의 기본 엔트리 포인트입니다. JIT 컴파일러로 애플리케이션을 컴파일 한 후, 루트 모듈인\(`AppModule`\)을 부트스트랩하여 웹 브라우저에서 실행합니다. 코드를 살펴보면 `AppModule` 파일을 불러와 부트스트랩 모듈에 설정합니다.
 
-`/main.ts` 파일:
-
+{% code-tabs %}
+{% code-tabs-item title="main.ts" %}
 ```typescript
 import { enableProdMode }         from "@angular/core";
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -45,6 +47,8 @@ if (environment.production) { enableProdMode() }
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 이해가 잘 안되면 그림을 살펴보세요.
 
@@ -56,8 +60,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 `main.ts` 파일로부터 호출되는 `app.module.ts` 모듈 파일은 `/app` 디렉토리 내에 위치해 있습니다. 코드를 살펴보면 `NgModule` 모듈을 불러와 `AppComponent` 컴포넌트를 선언, [부트스트래핑](https://angular.io/guide/bootstrapping) 합니다.
 
-`/app/app.module.ts` 파일:
-
+{% code-tabs %}
+{% code-tabs-item title="app/app.module.ts" %}
 ```typescript
 // BrowserModule은 웹 브라우저를 위한 모듈
 // 웹 애플리케이션 프로젝트일 경우, 반드시 로드해야 함.
@@ -91,6 +95,8 @@ import { AppComponent }  from './app.component';
 })
 export class AppModule { }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 이해가 잘 안되면 그림을 살펴보세요.
 
@@ -102,8 +108,8 @@ export class AppModule { }
 
 `AppComponent` 컴포넌트는 `app.component.ts` 파일에 정의되어 있습니다. 코드를 살펴보면 컴포넌트 모듈을 불러와 메타데이터를 입력하고, 클래스로 컴포넌트를 내보냅니다. 여기서 내보내진 클래스는 `main.ts`에서 `AppComponent`로 불러와 사용됩니다.
 
-`./app/app.component.ts` 파일:
-
+{% code-tabs %}
+{% code-tabs-item title="app/app.component.ts" %}
 ```typescript
 // 컴포넌트 데코레이트를 사용하기 위한 모듈 로드
 import { Component } from '@angular/core';
@@ -118,6 +124,8 @@ export class AppComponent {
   title = 'Angular 프론트엔드 애플리케이션';
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 컴포넌트 데코레이터에 설정된 메타데이터는 커스텀 요소 선택자, 템플릿, 스타일링 입니다.
 

@@ -1,6 +1,6 @@
 # Angular Material
 
-[Angular Material](https://material.angular.io/)은 Angular를 위한 Material 디자인 컴포넌트 모음으로 웹, 모바일, 데스크톱 환경에서 작동하는 모던한 UI 컴포넌트를 사용할 수 있습니다. Ang ular와 완벽한 통합을 위해 Angular 팀에서 제작한 프레임워크입니다.
+[Angular Material](https://material.angular.io/)은 Angular를 위한 Material 디자인 컴포넌트 모음으로 웹, 모바일, 데스크톱 환경에서 작동하는 모던한 UI 컴포넌트를 사용할 수 있습니다. Angular와 완벽한 통합을 위해 Angular 팀에서 제작한 프레임 워크입니다.
 
 ## 개발 모듈 설치
 
@@ -16,7 +16,7 @@ $ npm i @angular/material @angular/cdk
 
 > **NOTE.**  
 >  `@angular/animations` 모듈은 [WebAnimation API](https://drafts.csswg.org/web-animations/)를 사용하고 있어, 애니메이션 API를 지원하지 않는 브라우저에서는 정상 작동하지 않습니다. [브라우저 호환성](https://caniuse.com/#feat=web-animation) 체크 후, 프로젝트 반영 여부를 결정할 필요가 있습니다.   
-> \([web-animation-js](https://github.com/web-animations/web-animations-js) polyfill을 사용하는 방법도 있으니 참고하세요\)
+> \([web-animation-js polyfill](https://github.com/web-animations/web-animations-js)을 사용하는 방법도 있으니 참고하세요\)
 
 ```bash
 $ npm i @angular/animations
@@ -24,9 +24,9 @@ $ npm i @angular/animations
 
 루트 모듈인 `app.modules.ts` 파일에 `BrowserAnimationsModule` 모듈을 임포트 한 후, `@NgModule()`의 `imports` 항목에 추가합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="src/app.modules.ts" %}
 ```typescript
-// src/app.modules.ts
-
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -39,6 +39,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 })
 export class AppModule { }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 컴포넌트 등록 및 사용
 
@@ -46,9 +48,9 @@ export class AppModule { }
 
 모든 컴포넌트에서 Checkbox 컴포넌트를 사용하기 위해 `MatCheckboxModule`를 `@NgModule` 모듈 `imports` 항목에 추가합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="src/app.modules.ts" %}
 ```typescript
-// src/app.modules.ts
-
 import {MatCheckboxModule} from '@angular/material';
 
 @NgModule({
@@ -61,6 +63,8 @@ import {MatCheckboxModule} from '@angular/material';
   ...
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Checkbox 컴포넌트를 등록했으니 이어서 컴포넌트 템플릿 파일에서 사용하는 예를 살펴보겠습니다. 사용 방법은 간단합니다.
 
@@ -77,19 +81,25 @@ Checkbox 컴포넌트를 등록했으니 이어서 컴포넌트 템플릿 파일
 * pink-bluegrey.css
 * purple-green.css
 
+{% code-tabs %}
+{% code-tabs-item title="src/style.css" %}
 ```css
-/* src/style.css */
-
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 직접 테마 파일을 로드하길 선호한다면 `src/index.html` 파일 `<head>` 영역에 다음과 같은 코드를 추가할 수도 있습니다.
 
+{% code-tabs %}
+{% code-tabs-item title="src/index.html" %}
 ```markup
-<!-- src/index.html -->
-
-<link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+<link
+  href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" 
+  rel="stylesheet">
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Angular 팀에서 만든 테마가 아니라 직접 테마를 제작하려면 [테마 가이드](https://material.angular.io/guide/theming)를 참고해 작성하면 됩니다.
 
@@ -105,27 +115,39 @@ $ npm i hammerjs
 
 이어서 애플리케이션 엔트리 포인트인 `src/main.ts` 파일에 HammerJS 라이브러리를 불러오면 문제없이 제스처 라이브러리에 의존하는 컴포넌트를 사용할 수 있습니다.
 
+{% code-tabs %}
+{% code-tabs-item title="src/main.ts" %}
 ```typescript
-// src/main.ts
-
 import 'hammerjs';
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Material 아이콘 설정 \(옵션\)
 
 공식 [Material 디자인 아이콘](https://material.io/tools/icons/)을 프로젝트에 사용하고자 한다면 아이콘 폰트를 로드합니다.
 
+{% code-tabs %}
+{% code-tabs-item title="src/index.html" %}
 ```markup
-<!-- src/index.html -->
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 사용 방법은 다음과 같습니다. 콘텐츠로 추가되는 텍스트에 따라 아이콘이 변경됩니다. 설정 가능한 아이콘 식별 텍스트는 [Material 디자인 아이콘](https://material.io/tools/icons/)를 확인할 수 있습니다.
 
+{% code-tabs %}
+{% code-tabs-item title="HTML" %}
 ```markup
 <i class="material-icons" aria-hidden="true">home</i>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
 
 보다 자세한 사용 방법은 [Material 아이콘 가이드](https://google.github.io/material-design-icons/)를 참고하세요.
 
