@@ -2,7 +2,7 @@
 
 ## Angular Augury
 
-[Angular Augury](https://augury.angular.io/)는 Angular 애플리케이션을 디버깅하고 프로파일링 하는데 가장 많이 사용되는 \[Chrome DevTools 확장 프로그램\(Extensions\)\]\[2\]입니다.
+[Angular Augury](https://augury.angular.io/)는 Angular 애플리케이션을 디버깅하고 프로파일링 하는데 가장 많이 사용 되는 [Chrome DevTools 확장 프로그램](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd)\(Extensions\)입니다.
 
 ![](.gitbook/assets/angular-augury.png)
 
@@ -54,6 +54,4 @@ Injectors Graph 탭을 클릭하면 컴포넌트 및 서비스의 종속성을 �
 Augury의 또 다른 기능은 라우팅 정보를 표시하는 라우터 트리입니다. Router Tree 탭을 클릭하면 화면에 그래픽이 표시됩니다.
 
 ![](.gitbook/assets/augury-router-tree.png)
-
-\[2\]: [https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd)
 

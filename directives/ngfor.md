@@ -6,11 +6,9 @@ AppComponent 뷰에서 '보임', '감춤', '토글'을 콘텐츠로 하는 3개�
 
 먼저 반복할 데이터를 정의해야 합니다. AppComponent에 `buttons` 속성에 3개의 아이템을 가진 배열을 설정합니다.
 
-**TypeScript**
-
+{% code-tabs %}
+{% code-tabs-item title="app/app.component.ts" %}
 ```typescript
-// app/app.component.ts
-
 import { Component } from '@angular/core';
 
 @Component(metadata)
@@ -21,16 +19,18 @@ export class AppComponent {
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 이어서 AppComponent 템플릿 파일 `<app-button>` 요소를 작성한 후, `*ngFor` 디렉티브를 통해 AppComponent의 `buttons` 배열 데이터를 반복하여 구조를 동적으로 생성할 수 있습니다. 구문은 ES6에 추가된 `for - of` 문과 유사합니다.
 
-**HTML**
-
+{% code-tabs %}
+{% code-tabs-item title="app/app.component.html" %}
 ```markup
-<!-- app/app.component.html -->
-
 <app-button *ngFor="let button of buttons"></app-button>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## \*ngFor 로컬 변수
 
@@ -47,7 +47,9 @@ export class AppComponent {
 ```markup
 <app-button
   *ngFor="let button of buttons; let i = index; first as is_first"
-  [title]="`${i}번째 요소는 첫번째 버튼 요소가 ${is_first ? '맞습니다.': '아닙니다.'}`"
-></app-button>
+  [title]="`${i}번째 요소는 첫번째 버튼 요소가 ${is_first ? '맞습니다.': '아닙니다.'}`">
+</app-button>
 ```
+
+
 
