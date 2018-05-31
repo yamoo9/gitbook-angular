@@ -21,19 +21,21 @@ UPDATE src/app/app.module.ts (532 bytes)
 
 ![](../.gitbook/assets/comp-module.png)
 
-> **NOTE.**  
->  컴포넌트 생성 명령을 사용할 때 유닛테스트 `spec.ts` 파일을 생성하지 않으려면 `--spec` 옵션 값으로 `false`를 설정한 후 생성 명령을 실행하면 됩니다.
->
+{% hint style="info" %}
+**NOTE.**   
+컴포넌트 생성 명령을 사용할 때 유닛테스트 spec.ts 파일을 생성하지 않으려면 --spec 옵션 값으로 false를 설정한 후 생성 명령을 실행하면 됩니다.
+
 > ```bash
 > # ng generate component <컴포넌트-이름>
 > $ ng g c <컴포넌트-이름> --spec false
 > ```
->
-> 중첩된 컴포넌트\(컴포넌트 내부 컴포넌트\)를 생성 하려면 다음과 같이 명령을 처리합니다.
->
+
+중첩된 컴포넌트\(컴포넌트 내부 컴포넌트\)를 생성 하려면 다음과 같이 명령을 처리합니다.
+
 > ```bash
 > $ ng g c <컴포넌트-이름>/<서브-컴포넌트-이름>
 > ```
+{% endhint %}
 
 
 

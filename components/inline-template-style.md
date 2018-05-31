@@ -37,8 +37,7 @@ export class CheckboxComponent implements OnInit {
 
 {% hint style="info" %}
 **NOTE.**  
-프로젝트 팀원 중 컴포넌트가 아닌, HTML, CSS를 별도로 수정해야 할 경우는   
-별도의 템플릿, 스타일 파일을 유지하는 것이 보다 권장됩니다.
+프로젝트 팀원 중 컴포넌트가 아닌, HTML, CSS를 별도로 수정해야 할 경우는 별도의 템플릿, 스타일 파일을 유지하는 것이 보다 권장됩니다.
 {% endhint %}
 
 

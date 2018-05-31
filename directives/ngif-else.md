@@ -4,8 +4,8 @@
 
 `*ngIf` 디렉티브는 화면에 렌더링되는 과정에서 DOM에서 제외됩니다. 즉, 실제로 존재하지 않는 것입니다. 디렉티브 속성 값으로 설정된 데이터 유형 값이 `true`일 경우 화면에 그려지며, `false`일 경우는 그려지지 않습니다. 즉, if문과 마찬가지로 조건 값이 참일 경우와 거짓일 경우를 구분하여 처리됩니다.
 
-**TypeScript**
-
+{% code-tabs %}
+{% code-tabs-item title="app/button/button.component.ts" %}
 ```typescript
 import { Component } from "@angular/core";
 
@@ -29,9 +29,11 @@ export class ButtonComponent {
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-**HTML**
-
+{% code-tabs %}
+{% code-tabs-item title="app/button/button.component.html" %}
 ```markup
 <div class="button-group" role="group">
   <button type="button" (click)="chageRenderingState(true)">추가</button>
@@ -41,11 +43,10 @@ export class ButtonComponent {
 
 <p *ngIf="is_renderting">*ngIf 디렉티브에 의해 화면에 렌더링 될지, 아닐지가 결정됩니다.</p>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 `*ngIf` 디렉티브는 내부적으로 다음과 같이 처리됩니다. `[ngIf]` 속성 바인딩과 `<ng-template>`를 사용해 화면에 그림을 그릴지, 그리지 않을지를 결정하게 되는 것입니다. 문법이 다소 복잡하게 느껴지는 반면, `*ngIf` 디렉티브를 활용하면 쉽게 사용할 수 있습니다.
-
-> **NOTE.**  
->  `<ng-template>`는 화면에 표시되지 않는 템플릿 요소입니다.
 
 ```markup
 <ng-template [ngIf]="is_renderting">
@@ -53,12 +54,19 @@ export class ButtonComponent {
 </ng-template>
 ```
 
+{% hint style="info" %}
+**NOTE.**    
+`<ng-template>`는 화면에 표시되지 않는 템플릿 요소입니다.
+{% endhint %}
+
 ## else / ng-template
 
-Angular는 `*ngIf` 디렉티브는 제공하는 반면, `else`에 대한 디렉티브 대신 다음과 같이 구문으로 처리하는 방식을 제공합니다. 그리고 `<ng-template>` 요소를 사용하고 식별자 `#`를 설정해 사용합니다. \(다소 구문이 생소하고, 불편하지만 Angular 프레임워크 사용자로 익숙해져야 합니다. ^^;\)
+Angular는 `*ngIf` 디렉티브는 제공하는 반면, `else`에 대한 디렉티브 대신 다음과 같이 구문으로 처리하는 방식을 제공합니다. 그리고 `<ng-template>` 요소를 사용하고 식별자 `#`를 설정해 사용합니다. \(다소 구문이 생소하고, 불편하지만 Angular 프레임워크 사용자로 익숙해져야 합니다.\)
 
 ```markup
-<p *ngIf="is_renderting; else #elseStatement">is_renderting 값이 참이면 화면에 렌더링 됩니다.</p>
+<p *ngIf="is_renderting; else #elseStatement">
+  is_renderting 값이 참이면 화면에 렌더링 됩니다.
+</p>
 <ng-template #elseStatement>
   <p>is_renderting 값이 거짓이면 화면에 렌더링 됩니다.</p>
 </ng-template>

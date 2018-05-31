@@ -92,9 +92,7 @@ export class InputComponent {
 
 {% hint style="info" %}
 **NOTE.**  
-안타깝게도 Angular는 현재\(2018.06\) WAI-ARIA 속성을 동적으로 데이터 바인딩하는 것을   
-지원하지 않습니다. 이런 경우 동적으로 속성 값을 할당 하려면 `[attr.aria-label]` 방법을   
-사용해야 합니다.
+안타깝게도 Angular는 현재\(2018.06\) WAI-ARIA 속성을 동적으로 데이터 바인딩하는 것을 지원하지 않습니다. 이런 경우 동적으로 속성 값을 할당 하려면 `[attr.aria-label]` 방법을 사용해야 합니다.
 {% endhint %}
 
 
