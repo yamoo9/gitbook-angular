@@ -30,9 +30,9 @@
   * [부모 컴포넌트 ➡ 자식 컴포넌트](comp-communication/parent2child.md)
   * [자식 컴포넌트 ➡ 부모 컴포넌트](comp-communication/child2parent.md)
   * [컴포넌트 스타일 캡슐화](comp-communication/view-encapsulation.md)
-  * [템플릿 참조 변수](comp-communication/template-ref-var/README.md)
-    * [ViewChild 데코레이터](comp-communication/template-ref-var/viewchild.md)
-* [컴포넌트 콘텐츠 삽입](ng-content.md)
+  * [템플릿 참조 변수](comp-communication/template-ref-var.md)
+  * [ViewChild 데코레이터](comp-communication/viewchild.md)
+  * [콘텐츠 전달/삽입](comp-communication/ng-content.md)
 * 컴포넌트 라이프사이클
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
