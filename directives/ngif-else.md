@@ -64,7 +64,7 @@ export class ButtonComponent {
 Angular는 `*ngIf` 디렉티브는 제공하는 반면, `else`에 대한 디렉티브 대신 다음과 같이 구문으로 처리하는 방식을 제공합니다. 그리고 `<ng-template>` 요소를 사용하고 식별자 `#`를 설정해 사용합니다. \(다소 구문이 생소하고, 불편하지만 Angular 프레임워크 사용자로 익숙해져야 합니다.\)
 
 ```markup
-<p *ngIf="is_renderting; else #elseStatement">
+<p *ngIf="is_renderting; else elseStatement">
   is_renderting 값이 참이면 화면에 렌더링 됩니다.
 </p>
 <ng-template #elseStatement>
@@ -75,7 +75,7 @@ Angular는 `*ngIf` 디렉티브는 제공하는 반면, `else`에 대한 디렉�
 혹은 다음과 같은 `then ~ else -` 방법으로 코드를 기술할 수도 있습니다.
 
 ```markup
-<p *ngIf="is_renderting; then #ifStatement else #elseStatement"></p>
+<p *ngIf="is_renderting; then #ifStatement else elseStatement"></p>
 <ng-template #ifStatement>is_renderting 값이 참이면 화면에 렌더링 됩니다.</ng-template>
 <ng-template #elseStatement>is_renderting 값이 거짓이면 화면에 렌더링 됩니다.</ng-template>
 ```
