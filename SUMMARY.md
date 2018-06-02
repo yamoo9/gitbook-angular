@@ -23,7 +23,7 @@
 * [디렉티브](directives/README.md)
   * [\*ngIf - else 디렉티브](directives/ngif-else.md)
   * [\*ngFor 디렉티브](directives/ngfor/README.md)
-    * [\*ngFor + \*ngIf 혼합 사용](directives/ngfor/ngfor-+-ngif.md)
+    * [구조 디렉티브 사용 시, 주의점](directives/ngfor/ngfor-+-ngif.md)
   * [\[ngSwitch\] 디렉티브](directives/ngswitch.md)
   * [\[ngStyle\] 디렉티브](directives/ngstyle.md)
   * [\[ngClass\] 디렉티브](directives/ngclass.md)
