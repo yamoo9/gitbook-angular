@@ -39,7 +39,8 @@
   * [제너레이트 디렉티브](custom-directive/generate-directive.md)
   * [Renderer2 활용](custom-directive/renderer2.md)
   * [HostBinding / HostListener](custom-directive/hostbinding-hostlistener.md)
-  * [사용자 정의 속성](custom-directive/binding-directive-properties.md)
+  * [사용자 속성 제어](custom-directive/binding-directive-properties.md)
+  * [커스텀 구조 디렉티브](custom-directive/custom-structure-directive.md)
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
