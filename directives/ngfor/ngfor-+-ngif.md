@@ -1,6 +1,6 @@
 # \*ngFor + \*ngIf 혼합 사용
 
-Angular 디렉티브를 사용해 데이터 순환과 조건 처리를 동시에 수행하고 싶을 수도 있을 겁니다. 
+Angular 디렉티브를 사용해 데이터 순환과 조건 처리를 동시에 수행하고 싶을 수도 있을 겁니다. 아래 코드를 살펴 봐주세요.
 
 {% code-tabs %}
 {% code-tabs-item title="app/app.component.ts" %}
@@ -98,6 +98,4 @@ Use only one attribute prefixed with * ("odd = odd"> -->
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-
 
