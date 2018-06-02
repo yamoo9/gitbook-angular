@@ -12,7 +12,7 @@
 * [컴포넌트](components/README.md)
   * [데코레이터 / 메타데이터](components/decorator-metadata.md)
   * [템플릿 / 데이터 바인딩](components/template-data-binding.md)
-  * [컴포넌트 생성 명령](components/generate-component.md)
+  * [제너레이트 컴포넌트](components/generate-component.md)
   * [인라인 템플릿 / 스타일링](components/inline-template-style.md)
   * [셀렉터](components/metadata-selector.md)
 * [데이터 바인딩](data-binding/README.md)

@@ -100,6 +100,15 @@ $ ng new ng6project
 
 # 의존 모듈을 설치하지 않고 스캐폴딩
 $ ng new ng6project --skip-install
+
+# app(기본)이 아닌, 프로젝트 접두사(-p) 설정
+$ ng new ng6project --prefix <프로젝트-접두사>
+
+# 유닛 테스트 제외(-S) 설정
+$ ng new ng6project --skip-tests
+
+# Git 버전관리 제외(-g) 설정
+$ ng new ng6project --skip-git
 ```
 
 생성된 프로젝트 스캐폴딩 구조는 다음과 같습니다. 이와 같은 구조와 코딩 컨벤션이 **Angular 프레임워크 프로젝트의 표준 구조**입니다.
