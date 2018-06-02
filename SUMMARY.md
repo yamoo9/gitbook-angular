@@ -36,7 +36,8 @@
   * [콘텐츠 전달/삽입](comp-communication/ng-content.md)
   * [컴포넌트 라이프사이클](comp-communication/life-cycle.md)
 * [커스텀 디렉티브](undefined/README.md)
-  * [제너레이트 디렉티브](undefined/undefined.md)
+  * [제너레이트 디렉티브](undefined/undefined/README.md)
+    * [Renderer2 활용해 디렉티브 개선](undefined/undefined/renderer2.md)
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
