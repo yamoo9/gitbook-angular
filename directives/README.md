@@ -16,9 +16,20 @@ Angular 템플릿은 컴파일된 JavaScript에 의해 동적으로 렌더링 �
 
 속성 디렉티브와 달리 구조 디렉티브는 DOM 요소를 추가, 제거, 교체 등을 수행하여 레이아웃을 변경합니다. Angular가 기본 제공하는 구조 디렉티브는 앞에 별표\(`*`\)를 붙여 식별하며, 속성 디렉티브는 각괄호\(`[]`\)를 붙여 식별합니다.
 
-* `*ngIf`
-* `[ngSwitch]` / `*ngSwitchCase` / `*ngSwitchDefault`
-* `[ngStyle]`
-* `[ngClass]`
-* `*ngFor`
+{% hint style="info" %}
+**구조 디렉티브**
+
+* \*ngIf
+* \*ngFor
+* \*ngSwitchCase
+* \*ngSwitchDefault
+
+**속성 디렉티브**
+
+* \[ngSwitch\]
+* \[ngStyle\]
+* \[ngClass\]
+{% endhint %}
+
+
 
