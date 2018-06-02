@@ -41,6 +41,7 @@
   * [HostBinding / HostListener](custom-directive/hostbinding-hostlistener.md)
   * [사용자 속성 제어](custom-directive/binding-directive-properties.md)
   * [커스텀 구조 디렉티브](custom-directive/custom-structure-directive.md)
+* 서비스 / 의존성 주입
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
