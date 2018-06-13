@@ -5,10 +5,10 @@
 * [Angular 아키텍쳐](architecture/README.md)
   * [프로젝트 파일 구조](architecture/file-structure.md)
   * [엔트리 포인트](architecture/entry-point.md)
-* [디버깅](debugging.md)
 * [UI 프레임워크](ui-frameworks/README.md)
   * [Bootstrap](ui-frameworks/bootstrap.md)
   * [Angular Material](ui-frameworks/angular-material.md)
+* [디버깅](debugging.md)
 * [컴포넌트](components/README.md)
   * [데코레이터 / 메타데이터](components/decorator-metadata.md)
   * [템플릿 / 데이터 바인딩](components/template-data-binding.md)
@@ -41,7 +41,8 @@
   * [HostBinding / HostListener](custom-directive/hostbinding-hostlistener.md)
   * [사용자 속성 제어](custom-directive/binding-directive-properties.md)
   * [커스텀 구조 디렉티브](custom-directive/custom-structure-directive.md)
-* 서비스 / 의존성 주입
+* [서비스 / 의존성 주입](services-di/README.md)
+  * [제너레이트 서비스](services-di/generate-service.md)
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
