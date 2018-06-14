@@ -49,7 +49,10 @@ $ ng serve -o
 ![](../.gitbook/assets/boostrap.png)
 
 {% hint style="info" %}
-Bootstrap을 사용하는 방법은 [Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)을 참고하시길 바랍니다.
+Bootstrap을 사용하는 방법은 다음 문서를 참고하세요.
+
+* [Bootstrap 4 Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [Bootstrap 4 Cheat Sheet](https://www.creative-tim.com/bootstrap-cheat-sheet)
 {% endhint %}
 
 ## Bootstrap Sass 사용
