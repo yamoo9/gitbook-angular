@@ -57,7 +57,7 @@ $ npm install --save web-animations-js
 Angular 애플리케이션에서 [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder)를 사용하고, IE/Edge, Safari를 고려할 경우에만 필요합니다. Angular의 표준 애니메이션 지원은 더 이상 폴리필이 필요하지 않습니다 \(Angular 6.0 기준\).
 {% endhint %}
 
-### 온라인 IDE
+## 온라인 IDE
 
 웹 애플리케이션 개발을 위한 온라인 IDE\(통합 개발 환경\)로 Visual Studio Code와 동일한 사용자 경험을 제공합니다.
 
