@@ -4,9 +4,9 @@
 
 ![Anglar Framework](.gitbook/assets/angular%20%281%29.svg)
 
-[Angular](https://angular.io)는 JavaScript 기반의 오픈 소스 Front-End 웹 애플리케이션 프레임워크입니다. 초기 버전인 AngularJS는 2010년 발표되었고, Angular 1으로 부릅니다. 2016년 9월 Angular 2가 정식으로 발표되면서 AngularJS가 아닌, Angular로 이름을 통칭하기로 결정합니다. 현재\(2018년 6월\) Angular 6가 나온 상태입니다.
+[Angular](https://angular.io)는 JavaScript 기반의 오픈 소스 Front-End 웹 애플리케이션 프레임워크입니다. 초기 버전인 AngularJS는 2010년 발표되었고, Angular 1으로 부릅니다. 
 
-Google은 Angular를 단지 웹 프레임워크로만 사용하는 기술이 아닌, 모든 플랫폼에서 활용 가능한 형태로 발전시키고자 합니다.
+2016년 9월 Angular 2가 정식으로 발표되면서 AngularJS가 아닌, Angular로 이름을 통칭 하기로 결정합니다. 현재\(2018년 7월\) Angular 6가 나온 상태입니다. Google은 Angular를 웹 프레임 워크를 넘어, 모든 플랫폼에서 활용 가능한 형태로 발전 시키고자 합니다.
 
 ## AngularJS  vs  Angular
 
@@ -15,6 +15,8 @@ Google은 Angular를 단지 웹 프레임워크로만 사용하는 기술이 아
 * **Angular CLI 개발환경 지원 도구** 제공
 
 ![AngularJS vs Angular](.gitbook/assets/angularjs-angular2-logo-change.jpg)
+
+![AngularJS 1   vs   Angular 2+](.gitbook/assets/image.png)
 
 ## 학습이 쉽지 않은 이유
 
@@ -25,9 +27,13 @@ Angular는 배우기 쉽지 않습니다. **최소한으로 요구하는 사전 
 * **객체 지향 프로그래밍**에 대한 이해
 * **Front-End 개발 도구** \(npm, sass, babel, webpack, gulp, rollup 등\) 활용
 
+![Angular &#xBAA8;&#xB4C8; &#xC2DC;&#xC2A4;&#xD15C; &amp; &#xD074;&#xB798;&#xC2A4; &#xBCA0;&#xC774;&#xC2A4; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;](.gitbook/assets/image%20%282%29.png)
+
 ## 브라우저 호환성
 
 대부분의 모던 프레임워크가 그렇듯 [Angular 또한 **IE 9 이상** 지원](https://angular.io/guide/browser-support)합니다. 
+
+![IE 9 &#xC5D0;&#xBBAC;&#xB808;&#xC774;&#xC158; &#xD14C;&#xC2A4;&#xD2B8;](.gitbook/assets/image%20%281%29.png)
 
 #### 폴리필\(Polyfill\)
 
