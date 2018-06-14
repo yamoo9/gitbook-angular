@@ -57,11 +57,11 @@ $ npm install --save web-animations-js
 Angular 애플리케이션에서 [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder)를 사용하고, IE/Edge, Safari를 고려할 경우에만 필요합니다. Angular의 표준 애니메이션 지원은 더 이상 폴리필이 필요하지 않습니다 \(Angular 6.0 기준\).
 {% endhint %}
 
-## 온라인 IDE
+## 개발 IDE
 
-웹 애플리케이션 개발을 위한 온라인 IDE\(통합 개발 환경\)로 Visual Studio Code와 동일한 사용자 경험을 제공합니다.
+웹 애플리케이션 개발을 위한 IDE\(통합 개발 환경\)로 Visual Studio Code 또는 VS Code와 동일한 사용자 경험을 제공하는 온라인 에디터를 사용합니다.
 
-{% embed data="{\"url\":\"https://stackblitz.com/\",\"type\":\"link\",\"title\":\"Online VS Code IDE for Modern Web Applications - StackBlitz\",\"icon\":{\"type\":\"icon\",\"url\":\"https://c.staticblitz.com/assets/icon-664493542621427cc8adae5e8f50d632f87aaa6ea1ce5b01e9a3d05b57940a9f.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://c.staticblitz.com/assets/icon-664493542621427cc8adae5e8f50d632f87aaa6ea1ce5b01e9a3d05b57940a9f.png\",\"aspectRatio\":0}}" %}
+{% embed data="{\"url\":\"https://code.visualstudio.com/\",\"type\":\"link\",\"title\":\"Visual Studio Code - Code Editing. Redefined\",\"description\":\"Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.  Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://code.visualstudio.com/favicon.ico\",\"width\":128,\"height\":128,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"http://code.visualstudio.com/opengraphimg/opengraph-home.png\",\"width\":1223,\"height\":630,\"aspectRatio\":0.5151267375306623},\"caption\":\"오프라인 IDE\"}" %}
 
-
+{% embed data="{\"url\":\"https://stackblitz.com/\",\"type\":\"link\",\"title\":\"Online VS Code IDE for Modern Web Applications - StackBlitz\",\"icon\":{\"type\":\"icon\",\"url\":\"https://c.staticblitz.com/assets/icon-664493542621427cc8adae5e8f50d632f87aaa6ea1ce5b01e9a3d05b57940a9f.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://c.staticblitz.com/assets/icon-664493542621427cc8adae5e8f50d632f87aaa6ea1ce5b01e9a3d05b57940a9f.png\",\"aspectRatio\":0},\"caption\":\"온라인 IDE\"}" %}
 
