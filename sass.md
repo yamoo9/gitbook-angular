@@ -2,7 +2,7 @@
 
 ### Sass 프리프로세서 사용 설정
 
-Angular CLI 명령어를 사용해 프로젝트 생성 시, `--style` 옵션을 사용해 `sass`, `scss` 중 Sass 문법을 선택해 사용할 수 있습니다.
+Angular CLI 명령어를 사용해 프로젝트 생성 시, `--style` 옵션을 사용해 `sass`, `scss` 중 [Sass](http://sass-lang.com/) 문법을 선택해 사용할 수 있습니다.
 
 {% code-tabs %}
 {% code-tabs-item title="Angular CLI" %}
