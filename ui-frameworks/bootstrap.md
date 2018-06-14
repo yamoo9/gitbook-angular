@@ -54,7 +54,7 @@ Bootstrap을 사용하는 방법은 [Documentation](https://getbootstrap.com/doc
 
 ## Bootstrap Sass 사용
 
-### 방법 1.
+#### 1\) angular.json 사용
 
 `angular.json` 파일 `styles` 항목에 `scss/bootstrap.scss` 파일 경로를 추가합니다. \(유닛 테스트를 사용할 경우, `"test > options > styles"`에도 추가합니다\)
 
@@ -69,7 +69,7 @@ Bootstrap을 사용하는 방법은 [Documentation](https://getbootstrap.com/doc
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### 방법 2.
+#### 2\) style.sass 사용
 
 `src/style.sass` 파일 내부 상단에 다음과 같이 입력합니다. `~bootstrap`은 `node_modules/bootstrap` 경로를 가리킵니다. `scss` 디렉토리 내부에 위치한 `bootstrap.scss` 파일을 불러들이면 모든 컴포넌트에서 Bootstrap을 사용할 수 있습니다.
 
