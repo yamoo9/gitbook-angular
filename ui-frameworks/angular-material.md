@@ -14,10 +14,6 @@ $ npm i @angular/material @angular/cdk
 
 이어서 애니메이션\(`animations`\) 모듈을 설치 합니다. Angular Material 컴포넌트 중 애니메이션에 의존하기 때문에 애니메이션 모듈 설치가 필요합니다.
 
-> **NOTE.**  
->  `@angular/animations` 모듈은 [WebAnimation API](https://drafts.csswg.org/web-animations/)를 사용하고 있어, 애니메이션 API를 지원하지 않는 브라우저에서는 정상 작동하지 않습니다. [브라우저 호환성](https://caniuse.com/#feat=web-animation) 체크 후, 프로젝트 반영 여부를 결정할 필요가 있습니다.   
-> \([web-animation-js polyfill](https://github.com/web-animations/web-animations-js)을 사용하는 방법도 있으니 참고하세요\)
-
 ```bash
 $ npm i @angular/animations
 ```
@@ -156,6 +152,59 @@ import 'hammerjs';
 {% hint style="info" %}
 보다 자세한 사용 방법은 [Material 아이콘 가이드](https://google.github.io/material-design-icons/)를 참고하세요.
 {% endhint %}
+
+## 사용 예시
+
+### Form Field + Input
+
+[Form field](https://material.angular.io/components/form-field/overview), [Input](https://material.angular.io/components/input/overview) 폼 컴포넌트를 사용하기 위해서는 먼저 각 모듈을 호출해야 합니다.
+
+{% code-tabs %}
+{% code-tabs-item title="app.module.ts" %}
+```typescript
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule }     from '@angular/material/input';
+
+@NgModule({
+  imports: [
+    MatFormFieldModule,
+    MatInputModule
+  ]
+});
+
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="component.html" %}
+```markup
+<form>
+  <mat-form-field>
+    <label class="a11y-hidden" for="passport-id">패스포트 ID</label>
+    <input 
+      mat-input 
+      id="passport-id"
+      type="text"
+      placeholder="패스포트 ID">
+  </mat-form-field>
+</form>
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="component.css" %}
+```css
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+![&#xD328;&#xC2A4;&#xD3EC;&#xD2B8; ID &#xD3FC; &#xC785;&#xB825; &#xD544;&#xB4DC;](../.gitbook/assets/image%20%285%29.png)
 
 
 
