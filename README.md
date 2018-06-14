@@ -51,7 +51,7 @@ Angular 프레임워크는 최신 웹 플랫폼 표준을 따릅니다. 이에 �
 폴리필은 폴리\(Poly\) + 필\(Fill\)의 합성어로 "다양하게 채우다"는 의미로 해석될 수 있습니다. 최신 기술을 지원하지 않는 구형 브라우저에서 지원할 수 있도록 JavaScript, CSS로 대체하는 방법을 말합니다. 단, 폴리필을 사용해 구형 브라우저에서도 지원하게 구현할 수는 있지만, 속도는 저하될 수 있습니다.
 {% endhint %}
 
-다음 챕터에서 공부하는 [Angular CLI](https://github.com/angular/angular-cli/wiki)를 사용하면 자동으로 프로젝트를 구성해주는데, `src/polyfills.ts` 파일이 Angular 프로젝트 시, 오래된 브라우저를 고려하여 폴리필을 사용할 수 있도록 합니다. 이 파일에는 많은 수의 ​​폴리필이 ECMAScript `import` 문으로 구성되어 있습니다.
+다음 챕터에서 공부하는 [Angular CLI](https://uid.gitbook.io/angular/angular-cli)를 사용하면 자동으로 프로젝트를 구성해주는데, `src/polyfills.ts` 파일이 Angular 프로젝트 시, 오래된 브라우저를 고려하여 폴리필을 사용할 수 있도록 합니다. 이 파일에는 많은 수의 ​​폴리필이 ECMAScript `import` 문으로 구성되어 있습니다.
 
 일부 폴리필은 NPM 명령을 통해 설치가 필요합니다. 예를 들어, 프로젝트에 [웹 애니메이션 polyfill](http://caniuse.com/#feat=web-animation)이 필요한 경우 다음 명령을 통해 필요한 개발 모듈을 설치해야 합니다.
 
