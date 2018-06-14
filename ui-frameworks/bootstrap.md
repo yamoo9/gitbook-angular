@@ -1,5 +1,7 @@
 # Bootstrap
 
+## Bootstrap CSS 사용
+
 CSS 프레임워크 중 가장 인지도가 높은 [Bootstrap 프레임워크](https://getbootstrap.com/)를 설치해봅니다.
 
 ```bash
@@ -49,7 +51,7 @@ $ ng serve --open
 Bootstrap을 사용하는 방법은 [Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)을 참고하시길 바랍니다.
 {% endhint %}
 
-## Bootstrap Sass 사용 시
+## Bootstrap Sass 사용
 
 `src/style.sass` 파일 내부 상단에 다음과 같이 입력합니다. `~bootstrap`은 `node_modules/bootstrap` 경로를 가리킵니다. `scss` 디렉토리 내부에 위치한 `bootstrap.scss` 파일을 불러들이면 모든 컴포넌트에서 Bootstrap을 사용할 수 있습니다.
 
