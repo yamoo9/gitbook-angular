@@ -204,7 +204,48 @@ import { MatInputModule }     from '@angular/material/input';
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-![&#xD328;&#xC2A4;&#xD3EC;&#xD2B8; ID &#xD3FC; &#xC785;&#xB825; &#xD544;&#xB4DC;](../.gitbook/assets/image%20%285%29.png)
+![Angular Material &#xD328;&#xC2A4;&#xD3EC;&#xD2B8; ID &#xD3FC; &#xC785;&#xB825; &#xD544;&#xB4DC;](../.gitbook/assets/image%20%287%29.png)
+
+### Button + Icon
+
+{% code-tabs %}
+{% code-tabs-item title="app.module.ts" %}
+```typescript
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule }   from '@angular/material/icon';
+
+@NgModule({
+  imports: [
+    MatButtonModule,
+    MatIconModule
+  ]
+});
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="component.html" %}
+```markup
+<div class="button-group" role="group">
+  <button mat-icon-button color="primary">
+    <mat-icon aria-label="좋아요">favorite</mat-icon> 
+  </button>
+  <span>{{ count }}</span>
+</div>
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="component.css" %}
+```css
+[mat-icon-button] + span {
+  margin-left: 0.1em; 
+  vertical-align: -2px; 
+  color: #8a2be2;
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+![Angular Material &#xC544;&#xC774;&#xCF58; &#xBC84;&#xD2BC;](../.gitbook/assets/image%20%281%29.png)
 
 
 
