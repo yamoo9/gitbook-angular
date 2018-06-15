@@ -46,6 +46,7 @@
   * [커스텀 파이프](pipe/undefined.md)
 * [서비스 / 의존성 주입](services-di/README.md)
   * [제너레이트 서비스](services-di/generate-service.md)
+* [HttpClient](httpclient.md)
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
