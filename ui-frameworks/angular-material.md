@@ -204,7 +204,7 @@ import { MatInputModule }     from '@angular/material/input';
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-![Angular Material &#xD328;&#xC2A4;&#xD3EC;&#xD2B8; ID &#xD3FC; &#xC785;&#xB825; &#xD544;&#xB4DC;](../.gitbook/assets/image%20%287%29.png)
+![Angular Material &#xD328;&#xC2A4;&#xD3EC;&#xD2B8; ID &#xD3FC; &#xC785;&#xB825; &#xD544;&#xB4DC;](../.gitbook/assets/image%20%288%29.png)
 
 ### Button + Icon
 
