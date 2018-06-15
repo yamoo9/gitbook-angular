@@ -4,7 +4,7 @@
 
 작성이 마무리 된 파이프는 모든 컴포넌트에서 사용할 수 있도록 app.module.ts 파일에 등록해야 합니다.
 
-### Reading Zero Number
+### 숫자 앞에 0을 붙이는 파이프
 
 숫자 값이 10보다 작을 경우, 숫자 앞에 0을 붙이는 파이프입니다.
 
@@ -42,7 +42,7 @@ export class ReadingZeroPipe implements PipeTransform {
 <p>{{ 9 | readingZero }}</p> <!-- 09 -->
 ```
 
-### Ellipsis Text
+### 텍스트 생략 파이프
 
 텍스트 길이를 제한한 경우, 제한된 길이보다 긴 텍스트는 제거하여 생략\(Ellipsis\) 처리하는 파이프입니다.
 
@@ -84,7 +84,7 @@ export class EllipsisPipe implements PipeTransform {
 <p>{{ '텍스트 생략은 .....' | ellipsis: 80 }}</p>
 ```
 
-### Won Number
+### 대한민국 화폐\(원\) 파이프
 
 Angular 파이프 currency는 대한민국 화폐\(원\)를 처리할 수 없습니다. 이를 처리하는 원\(Won\) 파이프입니다. 작성된 코드를 살펴보면 파이프 내에서 빌트인 파이프를 불러와 사용할 수도 있습니다.
 
@@ -123,6 +123,4 @@ export class WonPipe implements PipeTransform {
 ```markup
 <p>{{10000 | won}}</p> <!-- 10,000원 -->
 ```
-
-
 
