@@ -320,7 +320,7 @@ export class SliceListPipeDemoComponent {
 
 ### I18nSelect 파이프
 
-객체의 속성과 일치할 경우, 값을 반환\([I18nSelectPipe](https://angular.io/api/common/I18nSelectPipe)\) 합니다. 
+객체의 속성과 일치할 경우, 값을 반환\([I18nSelectPipe](https://angular.io/api/common/I18nSelectPipe)\) 합니다. 예를 들어 각 나라별 인사말을 값으로 하는 객체에서 나라 식별자와 일치하는 값을 반환합니다. 일치하는 값이 없을 경우, 빈 문자열을 반환합니다.
 
 {% code-tabs %}
 {% code-tabs-item title="I18nSelectDemo.component.ts" %}
