@@ -52,7 +52,8 @@ $ ng serve -o
 Bootstrap을 사용하는 방법은 다음 문서를 참고하세요.
 
 * [Bootstrap 4 Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-* [Bootstrap 4 Cheat Sheet](https://www.creative-tim.com/bootstrap-cheat-sheet)
+* [creative-tim.com/bootstrap-cheat-sheet](https://www.creative-tim.com/bootstrap-cheat-sheet)
+* [hackerthemes.com/bootstrap-cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/)
 {% endhint %}
 
 ## Bootstrap Sass 사용

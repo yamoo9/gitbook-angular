@@ -38,10 +38,29 @@ export class ReadingZeroPipe implements PipeTransform {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+```markup
+<p>{{ 9 | readingZero }}</p> <!-- 09 -->
+```
+
 ### Ellipsis Text
 
 텍스트 길이를 제한한 경우, 제한된 길이보다 긴 텍스트는 제거하여 생략\(Ellipsis\) 처리하는 파이프입니다.
 
+{% code-tabs %}
+{% code-tabs-item title="app.module.ts" %}
+```typescript
+import { EllipsisPipe } from './pipe/ellipsis.pipe';
+
+@NgModule({
+  declarations: [
+    // ...
+    EllipsisPipe
+  ]
+});
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="ellipsis.pipe.ts" %}
 ```typescript
 import { Pipe, PipeTransform } from '@angular/core';
 
@@ -58,4 +77,52 @@ export class EllipsisPipe implements PipeTransform {
   }
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+```markup
+<p>{{ '텍스트 생략은 .....' | ellipsis: 80 }}</p>
+```
+
+### Won Number
+
+Angular 파이프 currency는 대한민국 화폐\(원\)를 처리할 수 없습니다. 이를 처리하는 원\(Won\) 파이프입니다. 작성된 코드를 살펴보면 파이프 내에서 빌트인 파이프를 불러와 사용할 수도 있습니다.
+
+{% code-tabs %}
+{% code-tabs-item title="app.module.ts" %}
+```typescript
+import { WonPipe } from './pipe/won.pipe';
+
+@NgModule({
+  declarations: [
+    // ...
+    WonPipe
+  ]
+});
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="won.pipe.ts" %}
+```typescript
+import { Pipe, PipeTransform } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
+
+@Pipe({
+  name: 'won'
+})
+export class WonPipe implements PipeTransform {
+  transform(value:number):string {
+    let d = new DecimalPipe('en-US');
+    return `${d.transform(value, '1.0-0')}원`;
+  }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+```markup
+<p>{{10000 | won}}</p> <!-- 10,000원 -->
+```
+
+
 
