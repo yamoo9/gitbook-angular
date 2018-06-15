@@ -355,3 +355,41 @@ export class I18nSelectDemoComponent {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### I18nPlural 파이프
+
+데이터 갯수를 파악하여 결과 값을 도출\([I18nPluralPipe](https://angular.io/api/common/I18nPluralPipe)\) 합니다. 예를 들어 댓글 정보를 담은 배열이 있을 때, 배열 아이템 갯수를 파악하여 
+
+{% code-tabs %}
+{% code-tabs-item title="I18nSelectDemo.component.ts" %}
+```typescript
+import { Component } from '@angular/core';
+
+@Component({ 
+  selector: 'i18n-plural-pipe', 
+  template: `
+    <span class="comments-info">
+      {{ comments.length | i18nPlural: comments_map }}
+    </span>
+  `
+})
+export class I18nPluralComponent {
+  comments:any[] = ['댓글 1', '댓글 2'];
+  comments_map:{[C:string]: string} = {
+    '=0': '0개의 댓글',
+    'other': '#개의 댓글'
+  };
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="뷰\(View\) : 결과" %}
+```markup
+<p>2개의 댓글</p>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
