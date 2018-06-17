@@ -16,7 +16,7 @@
 
 ![AngularJS vs Angular](.gitbook/assets/angularjs-angular2-logo-change.jpg)
 
-![AngularJS 1   vs   Angular 2+](.gitbook/assets/image.png)
+![AngularJS 1   vs   Angular 2+](.gitbook/assets/image%20%281%29.png)
 
 ## 학습이 쉽지 않은 이유
 
@@ -27,13 +27,13 @@ Angular는 배우기 쉽지 않습니다. **최소한으로 요구하는 사전 
 * **객체 지향 프로그래밍**에 대한 이해
 * **Front-End 개발 도구** \(npm, sass, babel, webpack, gulp, rollup 등\) 활용
 
-![Angular &#xBAA8;&#xB4C8; &#xC2DC;&#xC2A4;&#xD15C; &amp; &#xD074;&#xB798;&#xC2A4; &#xBCA0;&#xC774;&#xC2A4; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;](.gitbook/assets/image%20%285%29.png)
+![Angular &#xBAA8;&#xB4C8; &#xC2DC;&#xC2A4;&#xD15C; &amp; &#xD074;&#xB798;&#xC2A4; &#xBCA0;&#xC774;&#xC2A4; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;](.gitbook/assets/image%20%287%29.png)
 
 ## 브라우저 호환성
 
 대부분의 모던 프레임워크가 그렇듯 [Angular 또한 **IE 9 이상** 지원](https://angular.io/guide/browser-support)합니다. 
 
-![IE 9 &#xC5D0;&#xBBAC;&#xB808;&#xC774;&#xC158; &#xD14C;&#xC2A4;&#xD2B8;](.gitbook/assets/image%20%283%29.png)
+![IE 9 &#xC5D0;&#xBBAC;&#xB808;&#xC774;&#xC158; &#xD14C;&#xC2A4;&#xD2B8;](.gitbook/assets/image%20%285%29.png)
 
 #### 폴리필\(Polyfill\)
 

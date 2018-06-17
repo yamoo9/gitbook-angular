@@ -1,25 +1,10 @@
-# HttpClient
+# REST API 테스트
 
-### HTTPClient 모듈 임포트
+[reqres.in](https://reqres.in/) 서비스를 이용해 REST API 테스트를 진행해보겠습니다. 
 
-Angular 프레임워크 컴포넌트 또는 서비스에서 비동기 통신 하려면 HttpClientModule을 `app.module.ts`에 불러와 `@NgModule`에 임포트 합니다.
+![reqres.in/api](../.gitbook/assets/image.png)
 
-```typescript
-import { HttpClientModule } from '@angular/common/http';
-
-@NgModule({
-  // ...
-  imports: [
-    // ...
-    HttpClientModule
-  ],
-  // ...
-})
-```
-
-### REST API 테스트
-
-[reqres.in](https://reqres.in/) 서비스를 이용해 REST API 테스트를 진행해보겠습니다. 사용법은 다음과 같습니다.
+[CRUD](https://ko.wikipedia.org/wiki/CRUD) 사용법은 다음과 같습니다.
 
 #### GET
 
