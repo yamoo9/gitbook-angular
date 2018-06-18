@@ -8,7 +8,7 @@
 
 ![Postman](../.gitbook/assets/image%20%2816%29.png)
 
-### 랜덤 데이터 생성
+### 랜덤 데이터 생성 {#generate-random-data}
 
 {% embed data="{\"url\":\"https://mockaroo.com/\",\"type\":\"link\",\"title\":\"Mockaroo  - Random Data Generator and API Mocking Tool \| JSON / CSV / SQL / Excel\",\"description\":\"A free test data generator and API mocking tool - Mockaroo lets you create custom CSV, JSON, SQL, and Excel datasets to test and demo your software.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://mockaroo.com/assets/favicon-8d320ac46812befcc8e0c5388550bd14d2105f78bb354728e63dd50d9e345ede.png\",\"aspectRatio\":0}}" %}
 
@@ -20,7 +20,7 @@
 
 {% embed data="{\"url\":\"https://randomapi.com/\",\"type\":\"link\",\"title\":\"RandomAPI :: Index\",\"description\":\"Easily generate fake data for populating your mockups and testing your applications.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://randomapi.com/img/favicon.png\",\"aspectRatio\":0}}" %}
 
-### 온라인 REST API 테스트 서비스
+### 온라인 REST API 테스트 서비스 {#online-rest-api-test}
 
 {% embed data="{\"url\":\"https://reqres.in/\",\"type\":\"link\",\"title\":\"Reqres - A hosted REST-API ready to respond to your AJAX requests\",\"description\":\"A hosted REST-API ready to respond to your AJAX requests\"}" %}
 
@@ -30,13 +30,13 @@
 
 {% embed data="{\"url\":\"http://myjson.com/\",\"type\":\"link\",\"title\":\"Myjson - A simple json storage and hosting service\",\"icon\":{\"type\":\"icon\",\"url\":\"http://myjson.com/assets/favicon-5b1c39a7ac26f7c35be83b2b40e907c2.ico\",\"aspectRatio\":0},\"caption\":\"https://api.myjson.com/16oqx2\"}" %}
 
-### 로컬 REST API 테스트 서버
+### 로컬 REST API 테스트 서버 {#local-rest-api-test}
 
 JSON Server는 손쉽게 REST API를 구축해주는 라이브러리 입니다. REST API 서버의 기본적인 기능을 대부분 갖추고 있으며 테스트 용도로 사용됩니다.
 
 {% embed data="{\"url\":\"https://github.com/typicode/json-server\",\"type\":\"link\",\"title\":\"typicode/json-server\",\"description\":\"json-server - Get a full fake REST API with zero coding in less than 30 seconds \(seriously\)\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars0.githubusercontent.com/u/5502029?s=400&v=4\",\"width\":128,\"height\":128,\"aspectRatio\":1}}" %}
 
-#### 설치
+#### 설치 {#install}
 
 NPM 인스톨\(install\) 명령을 사용해 `json-server` 모듈을 설치합니다.
 
@@ -44,7 +44,7 @@ NPM 인스톨\(install\) 명령을 사용해 `json-server` 모듈을 설치합�
 $ npm i -g json-server
 ```
 
-#### 에셋 & db.json 준비
+#### 에셋 & db.json 준비 {#assets-db-json}
 
 [에셋 자료](https://github.com/yamoo9/assets/tree/master/images/ediya)를 보관할 디렉토리 및 REST API 테스트 할 [db.json](https://gist.github.com/yamoo9/990c01dc4640b48e65ac62398a39dd80) 파일을 준비합니다.
 
@@ -95,7 +95,7 @@ DELETE /posts/:id
 
 #### 데이터 읽기/쓰기/수정/제거
 
-[Postman](rest-api.md#postman)을 사용해 데이터를 읽고, 쓰고, 수정하거나, 제거할 수 있습니다. 즉, [CRUD](https://ko.wikipedia.org/wiki/CRUD) 를 수행할 수 있습니다.
+[Postman](rest-api-test.md#postman)을 사용해 데이터를 읽고, 쓰고, 수정하거나, 제거할 수 있습니다. 즉, [CRUD](https://ko.wikipedia.org/wiki/CRUD) 를 수행할 수 있습니다.
 
 {% hint style="info" %}
 CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create\(생성\), Read\(읽기\), Update\(갱신\), Delete\(삭제\)를 묶어서 일컫는 말입니다. 사용자 인터페이스가 갖추어야 할 기능\(정보의 참조/검색/갱신\)을 가리키는 용어로 사용되기도 합니다.
