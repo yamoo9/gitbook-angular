@@ -1,4 +1,4 @@
-# VScode 확장
+# VS Code 확장
 
 Angular 프로그래밍을 손쉽게 개발할 수 있도록 도와주는 추천 VSCode 확장\(Extensions\) 입니다.
 

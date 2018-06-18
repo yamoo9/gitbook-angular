@@ -1,5 +1,9 @@
 # 데이터 읽기
 
+## `get()` 메서드로 데이터 읽기
+
+HttpClient 객체의 get\(\) 메서드를 사용해 HTTP 통신 결과로 데이터를 읽어올 수 있습니다.
+
 ### 데이터 생성
 
 프로젝트 `src/assets` 디렉토리에 통신할 데이터 파일을 생성합니다.
@@ -63,6 +67,27 @@ export interface Colors {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+{% hint style="info" %}
+color, colors 인터페이스를 하나의 파일에서 관리할 수 있습니다.
+
+{% code-tabs %}
+{% code-tabs-item title="Colors.interface.ts" %}
+```typescript
+export interface Color {
+  id?: number;
+  name: string;
+  code: {...}
+}
+
+export interface Colors {
+  version: string;
+  colors: Color[];
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+{% endhint %}
 
 ### GET : 데이터 읽기
 
@@ -176,5 +201,38 @@ getColors(){
 
 응답 결과는 다음과 같이 콘솔 패널에 출력됩니다.
 
-![&#xC751;&#xB2F5; &#xACB0;&#xACFC; &#xCF58;&#xC194; &#xD328;&#xB110;&#xC5D0; &#xCD9C;&#xB825;](../.gitbook/assets/image%20%2810%29.png)
+![&#xC751;&#xB2F5; &#xACB0;&#xACFC; &#xCF58;&#xC194; &#xD328;&#xB110;&#xC5D0; &#xCD9C;&#xB825;](../.gitbook/assets/image%20%2811%29.png)
+
+## KAIST 오픈 API 정보 읽기
+
+뉴스, 알림사항, 학사공지, 채용초빙, 입찰구매 API 로 빠르고 풍부한 뉴스검색결과를 사용해보세요.
+
+{% embed data="{\"url\":\"https://www.kaist.ac.kr/html/kr/guide/guide\_0705.html\",\"type\":\"link\",\"title\":\"오픈 API < 홈페이지 가이드 < KAIST\",\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.kaist.ac.kr/Img/kr/kaist\_emblem.png\",\"width\":200,\"height\":200,\"aspectRatio\":1}}" %}
+
+#### **요청 URL \(request url\)**
+
+```bash
+http://www.kaist.ac.kr/_module/api/json.php
+```
+
+#### **요청 변수 \(request parameter\)**
+
+| **요청변수** | **값** | **설명** |
+| --- | --- | --- | --- | --- |
+| `code` | string \(필수\) | 게시판별 코드 번호 |
+| 제공 `code` | string \(필수\) | 뉴스 : `kaist_news`, 알림사항 : `kaist_event`, 학사공지 : `kaist_student`, 채용초빙 : `kr_060501`, 입찰구매 : `kr_060502` |
+| `display` | integer : 기본값 10, 최대 100 | 검색결과 출력건수를 지정합니다. 최대 100까지 가능합니다. |
+| `start` | integer : 기본값 1, 최대 1000 | 검색의 시작위치를 지정할 수 있습니다. 최대 1000까지 가능합니다. |
+
+#### 출력 결과 필드 \(response field\)
+
+| **필드** | **값** | **설명** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| no | integer | 게시물 출력 일년번호 그 외의 특별한 의미는 없습니다. |
+| ntt\_no | integer | 게시물 관리 번호 입니다. |
+| bbs\_cd | string | 게시판 코드 입니다. |
+| bbs\_nm | integer | 게시판명입니다. |
+| subject | string | 게시판 글 제목입니다. |
+| contents | string | 게시판 내용입니다. |
+| reg\_date | datetime | 게시글 등록일 입니다. |
 

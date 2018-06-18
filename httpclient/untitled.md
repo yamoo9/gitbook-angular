@@ -98,6 +98,14 @@ this.http.put<Color>(this.url, payload, {
 ```
 {% endhint %}
 
+{% hint style="info" %}
+데이터 중 일부만 수정 하려면 PUT 대신 PATCH 메서드를 사용할 수 있습니다.
+
+```typescript
+this.http.patch(...).subscribe(...)
+```
+{% endhint %}
+
 ### DELETE : 데이터 제거
 
 HttpClient 객체의 `delete()` 메서드를 사용해 제거할 식별자를 전달하면 통신을 통해 데이터를 제거할 수 있습니다.

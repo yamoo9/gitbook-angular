@@ -43,7 +43,7 @@ exprt class ColorsService {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### 서비스를 사용하는 이유
+### 컴포넌트가 아닌, 서비스에 HttpClient를 사용하는 이유
 
 개별 컴포넌트 마다 직접 HTTP 통신 요청을 하면 관리하거나, 테스트 하기 어려워 집니다. 반면 서비스를 사용해 HTTP 통신 과정을 캡슐화 하여 사용하면 관리하기가 매우 용이하기 때문입니다.
 
