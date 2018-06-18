@@ -50,6 +50,7 @@
   * [데이터 읽기](httpclient/undefined.md)
   * [REST API 테스트 환경](httpclient/rest-api.md)
   * [데이터 쓰기 / 갱신 / 제거](httpclient/untitled.md)
+* [VScode 확장](vscode-extensions.md)
 * [커닝페이퍼](cheat-sheet.md)
 * [Angular 6.x 변경 사항](change-angular-6.md)
 
