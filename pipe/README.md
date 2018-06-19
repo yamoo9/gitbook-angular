@@ -2,7 +2,7 @@
 
 파이프\(Pipe\)는 AngularJS\(v1\)에서 필터\(Filter\)라고 불렸고, 사용법은 동일합니다. 파이프는 HTML 템플릿에서 값의 표시 형태를 변환해 보여주기 위한 용도로 사용합니다. 모든 글자를 대문자\(uppercase\) 또는 소문자\(lowercase\)로 변경 한다거나,  숫자\(number\) 값을 3자리 마다 콤마\(,\)로 구분 한다거나, 화폐\(currency\) 값을 변경 할 수 있습니다.
 
-![Angular Pipe\(\|\)](../.gitbook/assets/image%20%2814%29.png)
+![Angular Pipe\(\|\)](../.gitbook/assets/image%20%2815%29.png)
 
 ## 파이프 문법
 
