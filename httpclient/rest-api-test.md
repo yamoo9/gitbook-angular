@@ -6,7 +6,7 @@
 
 {% embed data="{\"url\":\"https://www.getpostman.com/\",\"type\":\"link\",\"title\":\"Postman\",\"description\":\"Postman is the only complete API development environment, for API developers, used by more than 5 million developers and 100,000 companies worldwide. Postman makes working with APIs faster and easier by supporting developers at every stage of their workflow, and is available for Mac OS X, Windows, and Linux users.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.getpostman.com/img/touch-icons/touch-icon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.getpostman.com/img/v2/logo-glyph.png\",\"width\":404,\"height\":404,\"aspectRatio\":1}}" %}
 
-![Postman](../.gitbook/assets/image%20%2816%29.png)
+![Postman](../.gitbook/assets/image%20%2817%29.png)
 
 ### 랜덤 데이터 생성 {#generate-random-data}
 
@@ -62,7 +62,7 @@ JSON Server 명령을 사용해 테스트 서버를 구동합니다.
 $ json-server -w db.json -p 4000
 ```
 
-![&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; &#xAD6C;&#xB3D9;&#xB41C; JSON Server](../.gitbook/assets/image%20%2815%29.png)
+![&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; &#xAD6C;&#xB3D9;&#xB41C; JSON Server](../.gitbook/assets/image%20%2816%29.png)
 
 #### 홈페이지 \(Homepage\)
 
@@ -100,6 +100,8 @@ DELETE /posts/:id
 {% hint style="info" %}
 CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create\(생성\), Read\(읽기\), Update\(갱신\), Delete\(삭제\)를 묶어서 일컫는 말입니다. 사용자 인터페이스가 갖추어야 할 기능\(정보의 참조/검색/갱신\)을 가리키는 용어로 사용되기도 합니다.
 {% endhint %}
+
+![JSON Server + Postman](../.gitbook/assets/image%20%2815%29.png)
 
 #### 전체 텍스트 검색 \(Full-Text Search\)
 

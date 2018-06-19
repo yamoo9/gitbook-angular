@@ -1,6 +1,6 @@
 # 데코레이터 / 메타데이터
 
-## 컴포넌트 데코레이터\(Component Decorator\)
+## 컴포넌트 데코레이터 {#component-decorator}
 
 컴포넌트에 대해 이해하기 위해 간단한 버튼 컴포넌트를 만들어 보겠습니다. Angular 버튼 컴포넌트를 생성하기 위한 첫번째 과정은 먼저 `app/` 디렉토리 내부에 `button/` 디렉토리를 생성하는 것입니다.
 
@@ -26,7 +26,7 @@ export class ButtonComponent {
 >
 > ![Module - Component](../.gitbook/assets/module-component.png)
 
-## 메타데이터\(Metadata\)
+## 메타데이터 {#metadata}
 
 메타데이터는 컴포넌트 데코레이터를 통해 컴포넌트 클래스를 어떻게 처리해야 할지 정보를 사용자가 Angular에 제공하는 것을 말합니다. 메타데이터로 기입 가능한 정보는 다양하지만, 기본적으로 선택자, 템플릿, 스타일을 설정합니다. 설정 방법은 아래 코드를 참고하세요.
 

@@ -48,5 +48,25 @@ GitBook 애플리케이션 인터페이스 뷰를 살펴보면 좌측에 사이�
 보다 자세한 내용은 [Angular - Introduction to Components](https://angular.io/guide/architecture-components)를 참고하세요.
 {% endhint %}
 
+## 컴포넌트 네이밍 스타일가이드 {#component-naming-style-guide}
+
+파일 및 _Component_ 이름은 Angular [스타일 안내서](https://angular.io/guide/styleguide#naming)에 설명된 표준을 따릅니다.
+
+### 컴포넌트 클래스 이름
+
+UpperCamelCase로 쓰여지고 “Component” 단어로 끝나야 합니다.
+
+```typescript
+class MyCustomComponent {}
+```
+
+### 컴포넌트 파일 이름
+
+소문자로 입력된 각 단어 사이는 대시\(-\)로 구분해야 하며, `.component.ts`로 끝나야 합니다.
+
+```text
+my-custom.component.ts
+```
+
 
 
