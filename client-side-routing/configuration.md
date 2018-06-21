@@ -119,5 +119,5 @@ const routes:Routes = [
 ];
 ```
 
-![404 &#xC624;&#xB958; &#xD398;&#xC774;&#xC9C0; &#xB514;&#xC790;&#xC778;](../.gitbook/assets/image%20%2816%29.png)
+![404 &#xC624;&#xB958; &#xD398;&#xC774;&#xC9C0; &#xB514;&#xC790;&#xC778;](../.gitbook/assets/image%20%2820%29.png)
 

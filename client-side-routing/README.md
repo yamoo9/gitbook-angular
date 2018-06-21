@@ -21,7 +21,7 @@ IT, 컴퓨터 과학 분야에서 [상태\(State\)](https://en.wikipedia.org/wik
 
 서버 사이드 라우팅으로 구축된 기존의 애플리케이션은 사용자가 링크를 통해 브라우저 URL을 변경할 때 마다, URL에 따라 저장된 상태를 통해 만들어진 HTML 페이지를 전달 받도록 서버에 요청합니다. 요청된 사항을 서버에서 반영해 새로운 페이지를 만들어 사용자에게 전달해야 하기 때문에 변경된 페이지를 사용자에게 표시하는데 다소 시간이 소요됩니다.
 
-![&#xC11C;&#xBC84; &#xCE21;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xB77C;&#xC6B0;&#xD305;](../.gitbook/assets/image%20%2814%29.png)
+![&#xC11C;&#xBC84; &#xCE21;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xB77C;&#xC6B0;&#xD305;](../.gitbook/assets/image%20%2818%29.png)
 
 ### 클라이언트 사이드 라우팅 {#client-side-routing}
 
@@ -29,7 +29,7 @@ IT, 컴퓨터 과학 분야에서 [상태\(State\)](https://en.wikipedia.org/wik
 
 물론 애플리케이션 첫 페이지는 URL을 통해 서버에 해당 페이지를 렌더링 하는데 필요한 HTML, CSS, JavaScript, 이미지 파일 등을 요청해야 합니다. 하지만 이후 URL 변경에 따른 변동 내용은 모두 클라이언트 애플리케이션에서 처리합니다. 서버에서 응답 받은 페이지는 단 하나 뿐이라, 이를 [싱글 페이지 애플리케이션\(SPA\)](https://ko.wikipedia.org/wiki/%EC%8B%B1%EA%B8%80_%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98)라고 부릅니다.
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 ### SPA의 장점 {#spa-benefit}
 

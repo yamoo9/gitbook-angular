@@ -1,7 +1,12 @@
 # Table of contents
 
 * [Angular 프레임워크](README.md)
-* [Angular CLI](angular-cli.md)
+* [Angular CLI](angular-cli/README.md)
+  * [설치](angular-cli/install.md)
+  * [신규](angular-cli/new.md)
+  * [개발](angular-cli/serve.md)
+  * [빌드](angular-cli/build.md)
+  * [외부 모듈](angular-cli/undefined.md)
 * [Angular 아키텍쳐](architecture/README.md)
   * [프로젝트 파일 구조](architecture/file-structure.md)
   * [엔트리 포인트](architecture/entry-point.md)

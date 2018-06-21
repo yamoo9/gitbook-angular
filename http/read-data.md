@@ -201,7 +201,7 @@ getColors(){
 
 응답 결과는 다음과 같이 콘솔 패널에 출력됩니다.
 
-![&#xC751;&#xB2F5; &#xACB0;&#xACFC; &#xCF58;&#xC194; &#xD328;&#xB110;&#xC5D0; &#xCD9C;&#xB825;](../.gitbook/assets/image%20%2811%29.png)
+![&#xC751;&#xB2F5; &#xACB0;&#xACFC; &#xCF58;&#xC194; &#xD328;&#xB110;&#xC5D0; &#xCD9C;&#xB825;](../.gitbook/assets/image%20%2814%29.png)
 
 ## KAIST 오픈 API 정보 읽기
 
