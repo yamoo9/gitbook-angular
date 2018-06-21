@@ -11,8 +11,9 @@
   * [프로젝트 파일 구조](architecture/file-structure.md)
   * [엔트리 포인트](architecture/entry-point.md)
 * [디버깅](debugging.md)
-* [Sass 프리프로세서 \(옵션\)](sass.md)
-* [UI 프레임워크 \(옵션\)](ui-frameworks/README.md)
+* [VS Code 확장](vscode-extensions.md)
+* [Sass 활용](sass.md)
+* [UI 프레임워크 활용](ui-frameworks/README.md)
   * [Bootstrap](ui-frameworks/bootstrap.md)
   * [Angular Material](ui-frameworks/angular-material.md)
 * [컴포넌트](components/README.md)
@@ -67,5 +68,4 @@
 * [테스트-](test.md)
 * [Angular 6.x 변경 사항 -](change-angular-6.md)
 * [Angular 치트시트 -](cheat-sheet.md)
-* [VS Code 확장](vscode-extensions.md)
 
