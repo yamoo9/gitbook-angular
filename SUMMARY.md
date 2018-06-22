@@ -7,6 +7,7 @@
   * [개발](angular-cli/serve.md)
   * [빌드](angular-cli/build.md)
   * [외부 모듈](angular-cli/undefined.md)
+  * [테스트](angular-cli/test.md)
 * [Angular 아키텍쳐](architecture/README.md)
   * [프로젝트 파일 구조](architecture/file-structure.md)
   * [엔트리 포인트](architecture/entry-point.md)
